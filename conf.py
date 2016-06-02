@@ -18,15 +18,15 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Aditia A. Pratama"  # (translatable)
-BLOG_TITLE = "Aditia's Blog"  # (translatable)
+BLOG_TITLE = {"en": "Aditia's Blog", "id": "Catatan Si Adit :)"}  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://aditiapratama.github.io/"
+SITE_URL = "http://www.aditia.pawitra.id/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://aditiapratama.github.io/"
-BLOG_EMAIL = "aditia.ap@gmail.com"
-BLOG_DESCRIPTION = "Just Another Blog using Nikola"  # (translatable)
+# BASE_URL = "http://aditiapratama.github.io/blog"
+BLOG_EMAIL = "aditia@pawitra.id"
+BLOG_DESCRIPTION = "Share love to the world."  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -83,6 +83,7 @@ DEFAULT_LANG = "en"
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
+    "id": "./id"
     # Example for another language:
     # "es": "./es",
 }
@@ -124,14 +125,17 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags"),
-        ("/rss.xml", "RSS feed"),
+        ("/index.html", "Home", "icon-home"),
+        ("/archive.html", "Archives", "icon-folder-open-alt"),
+        ("/categories/", "Tags", "icon-tags"),
+        ("/rss.xml", "RSS", "icon-rss"),
+        ("https://getnikola.com", "About me", "icon-user"),
+        ("https://github.com/aditiapratama", "My Github", "icon-github"),
     ),
 }
 
 # Name of the theme to use.
-THEME = "bootstrap3"
+THEME = "zen"
 
 # Below this point, everything is optional
 
@@ -139,7 +143,7 @@ THEME = "bootstrap3"
 # another time zone, please set TIMEZONE to match. Check the available
 # list from Wikipedia:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-# (e.g. 'Europe/Zurich')
+
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
 TIMEZONE = "Asia/Jakarta"
@@ -203,10 +207,12 @@ TIMEZONE = "Asia/Jakarta"
 #
 
 POSTS = (
+    ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
+    ("stories/*.md", "stories", "story.tmpl"),
     ("stories/*.rst", "stories", "story.tmpl"),
     ("stories/*.txt", "stories", "story.tmpl"),
 )
@@ -961,7 +967,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
