@@ -130,7 +130,7 @@ NAVIGATION_LINKS = {
         ("/archive.html", "Archives", "icon-folder-open-alt"),
         ("/categories/index.html", "Tags", "icon-tags"),
         ("/rss.xml", "RSS", "icon-rss"),
-        ("/stories/about.me.html", "About me", "icon-user"),
+        ("/stories/about-me/index.html", "About me", "icon-user"),
         ("https://twitter.com/aditia_ap", "My Twitter", "icon-twitter"),
         ("https://github.com/aditiapratama", "My Github", "icon-github"),
     ),
@@ -626,7 +626,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
