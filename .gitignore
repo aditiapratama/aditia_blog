@@ -92,7 +92,7 @@ ENV/
 # Rope project settings
 .ropeproject
 
-# Nikola 
+# Nikola
 _site/
 *.pyc
 .DS_Store
@@ -107,5 +107,6 @@ __pycache__
 #pneumatic/
 develop/
 output/
+
 *.DS_Store
 *.pyc
