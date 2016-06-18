@@ -102,3 +102,10 @@ cache/
 output/
 __pycache__
 
+# pelican plugin
+plugins/
+pneumatic/
+develop/
+output/
+*.DS_Store
+*.pyc
