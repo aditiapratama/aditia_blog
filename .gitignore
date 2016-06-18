@@ -107,6 +107,8 @@ __pycache__
 #pneumatic/
 develop/
 output/
+.travisdeploykey
+.travisdeploykey.pub
 
 *.DS_Store
 *.pyc
