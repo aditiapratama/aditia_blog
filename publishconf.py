@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://aditia.pawitra.id'
+SITEURL = 'http://www.aditia.pawitra.id'
 RELATIVE_URLS = False
 OUTPUT_PATH = 'output/'
 
