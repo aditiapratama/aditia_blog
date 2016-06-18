@@ -8,6 +8,6 @@ env:
     secure: nntkQFZeoyk9l+0bFH7VCEXLJYqfBHnKg1qVC/+qNqO/Gen8EL0DSHqkB4ST4NPdpWF/oWZ0pGFYDMlpcD3uVJuq03uEMCfQK1kY1paWLJsNzrOLxMbM7wGoCZp1LFAoeZdD5e0HLprmrr9R4RobFNAutUfRRgMQ+FSFQttjkqbhsyQTd9V4LBqfOIwy8xSBlp8y4WzLDc8scsbaEIkz3weHuLYeiTMPr6sWPaqjkbPXz3nlkwt/c5HOLtcJ16pihWU2tOV9v4IT9NfJubyXwlCjF3i+VuRT1OdnusspHVC4t5TlaNWJAf1VxApVjxxVED22FntsjBW5D6oQ6lEdFb8Rn9JogRIMVbP36srHwNq7LOEQQOK/usIHW4x82pBqIe0gwXmv7Cvvo+h13EZCbQK2s/RBnWXnP4vE8Z4v4UJ19YB0i5WF2+ESyBoqA4r5/R7CRZv73MczRT6axnd8De6CkDjwuJTwsofAWE3gM5V8q+E09PfrPpiNpZH01ZhZulaZBqWulGDkyiWw9RD1Y9tUS8I16F8FqbWoROYk7ibOscpdnbnXbVdCRsNTsPvfDRe7zbP7VxwbI2khjB2nw7ozFVJXi5ufmnQagqIMBN395zhzwg+5PKmc8d9sFLrff8iI+eHAN2IFumxSea4fgMOkYuff2/yKIzBfIvKV0rQ=
 cache: pip
 before_script: gem install sass
- - openssl aes-256-cbc -K $encrypted_76a9a7e4e6ee_key -iv $encrypted_76a9a7e4e6ee_iv -in .travisdeploykey.enc -out .travisdeploykey -d
+               openssl aes-256-cbc -K $encrypted_76a9a7e4e6ee_key -iv $encrypted_76a9a7e4e6ee_iv -in .travisdeploykey.enc -out .travisdeploykey -d
 script: pelican -s publishconf.py
 after_success: "./generate.sh deploy"
