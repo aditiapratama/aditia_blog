@@ -10,3 +10,11 @@ cache: pip
 before_script: gem install sass
 script: pelican -s publishconf.py
 after_success: "./generate.sh deploy"
+deploy:
+  provider: releases
+  api_key:
+    secure: Ql5w2qUNNAPpbvaRYZUeTl/DDwFM36zuii3H6/PMRjSORxPtj73JTi06dMd0MNHkVJmv9dZLPTrsMSgAQenEJWzfrAMtJ5xdHo8Heke9BzXId8Ii2Yhddn6RC94WkUPzRNnW9ZMrsZaSyPDCabTq5oWxVkCxSO+IyVkTebi/TRfv0WSxtr/QwWL5HYj5OlyuTx5lCus6aksN8UxjxxWu8PkgHOxnFSflyRHcANqzoB1Iq0d7qM4oUrFoi8hzAeKl4E66TPTYfHWVafw+A2BV9Q7cSsOW1wXlBVkAArIUWUgPY32HYE6oiFgV0Ly8XmicsVwZ6Cozb5GSB7iR5lNTqbuOJwBg+4JaJcakBcYBeQmFkz6t5qF+2I8pZHdBoSMvU2bk3H1tj/o1QB2rnhdB0ToG/88Vcwoy++/9J64hTiGiQC5Y2w+1wGG8ERF0WSxAA2s5cUrzr4DT9v9OjoNUQseo0wvi0JZP9lyr+kMjfju38gjNdlpqhN95naQECy06ha71yJKIh4JeBvIHDiJasvJvmdJ6SBn6rATFv4pLTjNEFXGa9v4Shs7chJQCv5rYX7DNooc3PvdfRpxkhOyRgbW4oee7Z/v5yBlsuh51CujBkUb9jdgWz5hIMtmz3qDeJuLx81O2aHtk0VNSdURhNtr/iB46n+gn3VgL2hZlCuQ=
+  file: ''
+  on:
+    repo: aditiapratama/aditia_blog
+    branch: pelican
