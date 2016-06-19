@@ -7,6 +7,8 @@ env:
   global:
     secure: PxCAfH5bRayT9vLW9FS3mK/lmUoDnlum154kpVedlI6nKUKDNvEIGLpyjGrX4r6MYC+o1MkVlxKmvRCrg/p7w+zk92ncRI/BGL9EmgAwECJYpJxpju5yMeTZROYgt9iF4ru638TSg/IaEuXsYZaUtFV8riaIDSeQofHHaF3iVWvGBvIf5Se6mFZgp0doQmWRfbB4Tr1S/2j+jTmdIRTQWQnIl2BO8M5hexlvxz6hCqVadKGFldrN3b82ZBEoS7WaJndwYpmpwkOPvaE67ZlQou6DjehXq8H3fplkaHLqf6FdLIKrHMDY58oVoCDaoQCOfDLYXegBiEJAso1Vip3EwkFuI1Q55RvLQ5uwaUZZTS8HkCT3gFO9EWY/WWmaF0N0NeH23LnJ0Se12gdutPAU//sIsAbC2YsVtkj/AxMgL0sIVfgUxIE5bCbYH9ERCKfpfeOUuumgRPPKRoM41BA+QXF/PX8Roxb3UaApk8rROzmzjNT/CnnzkeKTZ6ofnhSnwlmSEeARrdcU9efEOvkDafRwXUkL9TRvlXDhtpPW15waNf0lgHwwMZMKKQj98L4PaOOhWjqYllxuVnazcR9KDLiks3CckVcXXfdhPiMlCACeaaAhLW8p+Kkzs8PJtfpTpSLHYPdHKs4GoghoRduqYhhjOVfJoaVdS3q8bjairpA=
 cache: pip
-before_script: gem install sass
+before_script:
+  - gem install sass
+  - chmod +x generate.sh
 script: pelican -s publishconf.py
 after_success: "./generate.sh deploy"
