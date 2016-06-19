@@ -109,6 +109,7 @@ develop/
 output/
 .travisdeploykey
 .travisdeploykey.pub
+_mdwriter.cson
 
 *.DS_Store
 *.pyc
