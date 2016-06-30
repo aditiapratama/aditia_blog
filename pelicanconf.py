@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 SITENAME = "Aditia A. Pratama"
 DOMAIN = 'aditia.pawitra.id'
 BIO_TEXT = 'Instructor  and Developer from Bandung, Indonesia.'
-FOOTER_TEXT = 'Crafted with <i class="fa fa-heart"></i> | Powered by <a href="http://getpelican.com">Pelican</a>'
+FOOTER_TEXT = '<i class="fa fa-code"></i> with <i class="fa fa-heart"></i> | Powered by <a href="http://getpelican.com">Pelican</a>'
 
 SITE_AUTHOR = 'Aditia A. Pratama'
 TWITTER_USERNAME = '@aditia_ap'
