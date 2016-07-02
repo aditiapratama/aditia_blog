@@ -1,7 +1,3 @@
-[submodule "pneumatic"]
-		path = pneumatic
-		url = git://github.com/aditiapratama/pneumatic.git
-	branch = develop
 [submodule "plugins"]
 	path = plugins
 	url = https://github.com/getpelican/pelican-plugins.git
