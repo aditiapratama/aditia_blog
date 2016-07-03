@@ -3,4 +3,4 @@
 	url = https://github.com/getpelican/pelican-plugins.git
 [submodule "pneumatic"]
 	path = pneumatic
-	url = https://github.com/aditiapratama/pneumatic
+	url = git@github.com:aditiapratama/pneumatic.git 
