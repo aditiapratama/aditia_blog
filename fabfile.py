@@ -103,7 +103,7 @@ def live_build(port=9000):
     server = livereload.Server()
     server.watch('../content/*.md',
         livereload.shell('pelican -s ../pelicanconf.py -o ../output'))
-    server.watch('../pneumatic/static/',
+    server.watch('../pneumatic',
         livereload.shell('pelican -s ../pelicanconf.py -o ../output'))
     server.watch('*.html')
     server.watch('*.css')
