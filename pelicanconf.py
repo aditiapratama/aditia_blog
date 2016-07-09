@@ -78,7 +78,7 @@ templates = ['404.html']
 TEMPLATE_PAGES = {page: page for page in templates}
 
 STATIC_PATHS = ['images', 'uploads', 'extra']
-IGNORE_FILES = ['.DS_Store', 'main.css', 'pneumatic.scss', 'pygments.css']
+IGNORE_FILES = ['.DS_Store', 'main.css', 'pneumatic.scss', 'pygments.css', 'main.scss', '_octicons.scss', '_variables.scss']
 
 extras = ['CNAME', 'favicon.ico', 'keybase.txt', 'robots.txt']
 EXTRA_PATH_METADATA = {'extra/%s' % file: {'path': file} for file in extras}
