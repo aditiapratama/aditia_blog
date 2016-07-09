@@ -1,10 +1,12 @@
-Title: Blender Log 
-## Current Branch : ![alt text][logo] *master*
-[logo]: ../images/icons/blender_48.png 
+Title: Blender Logs
+## Current Branch : `*master*`
+###Time Compiled : __7/10/2016, 6:17:21 AM__
+***
 
-#### BLENDER 
+# ~BLENDER
 
-user | hash | comment | time
+
+**AUTHOR** | **HASH** | **MESSAGE** | **TIME**
 --- | --- | --- | ---
 Lukas Stockner | `2a69b09` | Fix T48732 v2: New GGX breaks OpenCL kernel | *2 days ago*
 Bastien Montagne | `aff81c6` | Cleanup: Get rid of remaining 'BKE_<id>_unlink()' functions, no more used anyway. | *2 days ago*
@@ -37,9 +39,12 @@ Joshua Leung | `ec7603d` | GPencil: Added a new version of the "delete active fr
 Bastien Montagne | `37560e7` | Fix T48689: Transform proportional size was not seriously clamped. | *4 days ago*
 Campbell Barton | `d9a01a1` | Fix T48707: Edit-mesh intersect crash | *4 days ago*
 
-### ADDONS 
+***
 
-user | hash | comment | time
+# ~ADDONS
+
+
+**AUTHOR** | **HASH** | **MESSAGE** | **TIME**
 --- | --- | --- | ---
 Bastien Montagne | `2b6a756` | Fix T48713: Problem when importing FBX file with 2 armatures. | *3 days ago*
 Campbell Barton | `b196c48` | blendfile: add __repr__ to DNAName and DNAStruct | *5 days ago*
@@ -57,9 +62,12 @@ Maurice Raybaud | `7e05091` | *converted all calls to file.write of .shading.py 
 meta-androcto | `4eafe31` | Add Tab Name Change: T48459 | *5 weeks ago*
 meta-androcto | `27a7811` | Fix panel category: T48459 | *5 weeks ago*
 
-### ADDONS CONTRIB
+***
 
-user | hash | comment | time
+# ~ADDONS CONTRIB
+
+
+**AUTHOR** | **HASH** | **MESSAGE** | **TIME**
 --- | --- | --- | ---
 meta-androcto | `686044b` | Rename ui_pie_menus/ to space_view3d_pie_menus update menu structure, clean up | *2 days ago*
 meta-androcto | `6dbe6b8` | fix for auto keyframe thanks lijenstina | *6 days ago*
@@ -77,9 +85,12 @@ meta-androcto | `7a2693b` | initial commit mesh_1D_scripts.py: T48619 | *2 weeks
 meta-androcto | `50f8d6d` | initial commit add_curve_simple.py: T37664 | *2 weeks ago*
 meta-androcto | `810f8c4` | Contrib: Geodesic Domes > code clean up for T48608 | *2 weeks ago*
 
-### BAM 
+***
 
-user | hash | comment | time
+# ~BAM
+
+
+**AUTHOR** | **HASH** | **MESSAGE** | **TIME**
 --- | --- | --- | ---
 Campbell Barton | `e6f6bd6` | minor edits to blendfile | *3 weeks ago*
 Campbell Barton | `5f5baf3` | Minor changes | *5 months ago*
@@ -97,9 +108,12 @@ Campbell Barton | `4f322cf` | Fix T46811: Replaying binary edits failed for rela
 Campbell Barton | `fba8bf0` | Fix for stupid typo | *1 year, 1 month ago*
 Campbell Barton | `e41a177` | Change pack --exclude behavior, don't touch excluded paths at all | *1 year, 1 month ago*
 
-### FLAMENCO 
+***
 
-user | hash | comment | time
+# ~FLAMENCO
+
+
+**AUTHOR** | **HASH** | **MESSAGE** | **TIME**
 --- | --- | --- | ---
 Francesco Siddi | `e937d0c` | Merge pull request #191 from djazo/docfix |  *8 weeks ago*
 Francesco Siddi | `e7239a8` | Merge pull request #190 from djazo/fix176 |  *8 weeks ago*
@@ -117,7 +131,10 @@ Francesco Siddi | `eb3fb42` | Worker: improved help on run.py |  *6 months ago*
 Francesco Siddi | `7662cba` | Expanded Docker installation guide |  *6 months ago*
 Francesco Siddi | `2d61360` | Removed mentions of Grunt, since it has been replaced with Gulp |  *6 months ago*
 
-### BLENDER MANUAL 
+***
 
-rev | user | date | time | comment 
+#### BLENDER MANUAL
+
+
+**REV** | **DEVS** | date | time | comment
 --- | --- | --- | --- | ---
