@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from markdown.extensions.codehilite import CodeHiliteExtension
+from markdown.extensions.toc import TocExtension
 
 SITENAME = "Aditia A. Pratama"
 DOMAIN = 'aditia.pawitra.id'
@@ -67,7 +69,13 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 TYPOGRIFY = True
-MD_EXTENSIONS = ['admonition', 'codehilite(linenums=True)', 'extra']
+PYGMENTS_STYLE = 'monokai'
+# MD_EXTENSIONS = ['admonition', 'codehilite(linenums = True, css_class = highlight)','extra']
+MD_EXTENSIONS = [
+    CodeHiliteExtension(css_class='highlight'),
+    TocExtension(permalink=True),
+    'markdown.extensions.extra',
+]
 
 CACHE_CONTENT = False
 DELETE_OUTPUT_DIRECTORY = True
