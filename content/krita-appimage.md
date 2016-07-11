@@ -7,10 +7,11 @@ In this quick tips, I want to show you how to install Krita in linux in very eas
 1. First we need to download the latest Krita from the website.
 2. Amazing
 
+```sh
+    wget -c
+    hello
+    this is great
+```
 
-  `halo`
 
-  `Test`
-
-
-2. Test
+2. Test `this is inline`
