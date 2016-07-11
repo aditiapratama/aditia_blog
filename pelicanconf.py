@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from markdown.extensions.codehilite import CodeHiliteExtension
-from markdown.extensions.toc import TocExtension
+# from markdown.extensions.codehilite import CodeHiliteExtension
+# from markdown.extensions.toc import TocExtension
 
 SITENAME = "Aditia A. Pratama"
 DOMAIN = 'aditia.pawitra.id'
@@ -34,7 +34,7 @@ SOCIAL_ICONS = [
 
         ]
 
-THEME_COLOR = '#FFC107'
+THEME_COLOR = '#455A64'
 
 # Pelican Settings
 RELATIVE_URLS = True
@@ -70,12 +70,12 @@ TRANSLATION_FEED_ATOM = None
 
 TYPOGRIFY = True
 PYGMENTS_STYLE = 'monokai'
-# MD_EXTENSIONS = ['admonition', 'codehilite(linenums = True, css_class = highlight)','extra']
-MD_EXTENSIONS = [
-    CodeHiliteExtension(css_class='highlight'),
-    TocExtension(permalink=True),
-    'markdown.extensions.extra',
-]
+MD_EXTENSIONS = ['admonition','fenced_code','codehilite(linenums=True)','extra']
+# MD_EXTENSIONS = [
+#     CodeHiliteExtension(css_class='highlight'),
+#     TocExtension(permalink=True),
+#     'markdown.extensions.extra',
+# ]
 
 CACHE_CONTENT = False
 DELETE_OUTPUT_DIRECTORY = True
@@ -86,13 +86,13 @@ templates = ['404.html']
 TEMPLATE_PAGES = {page: page for page in templates}
 
 STATIC_PATHS = ['images', 'uploads', 'extra']
-IGNORE_FILES = ['.DS_Store', 'main.css', 'pneumatic.scss', 'pygments.css', 'main.scss', '_octicons.scss', '_variables.scss']
+IGNORE_FILES = ['.DS_Store', 'main.css', 'pneumatic.scss', 'pygments.css', 'main.scss', '_octicons.scss', '_variables.scss', 'css']
 
 extras = ['CNAME', 'favicon.ico', 'keybase.txt', 'robots.txt']
 EXTRA_PATH_METADATA = {'extra/%s' % file: {'path': file} for file in extras}
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['assets', 'neighbors', 'render_math']
+PLUGINS = ['assets','neighbors','render_math','pelican_youtube']
 ASSET_SOURCE_PATHS = ['static']
 ASSET_CONFIG = [
             ('cache', False),
