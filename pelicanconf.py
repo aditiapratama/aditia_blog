@@ -15,15 +15,16 @@ GOOGLE_PLUS_URL = ''
 INDEX_DESCRIPTION = 'Random Thoughts and Technical Notes from Aditia A. Pratama, a CG instructor and  developer from Bandung, Indonesia.'
 
 SIDEBAR_LINKS = [
-            '<a href="/about/">About</a>',
-            '<a href="/archive/">Archive</a>',
+            '<a href="/blender-logs/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="bf-blender"></i> Commit Logs</button></a>',
+            '<a href="/about/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a>',
+            '<a href="/archive/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Archive</button></a>'
         ]
 
 ICONS_PATH = 'images/icons'
 
 GOOGLE_FONTS = [
-        "Raleway:400,600",
-        "Source Code Pro",
+        "Raleway:400,700",
+        "Inconsolata",
         ]
 
 SOCIAL_ICONS = [
