@@ -3,8 +3,8 @@
 <head>
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
-	<title>Blender Log | Aditia A. Pratama</title>
-	<meta name="description" content="Current Branch : master BLENDER user hash comment time Lukas Stockner 2a69b09 Fix T48732 v2: New GGX breaks OpenCL kernel 2 days ago Bastien Montagne aff81c6 Cleanup: Get rid of remaining ‘BKE__unlink()’ functions, no more used anyway. 2 days ago Bastien Montagne ...">
+	<title>Blender Logs | Aditia A. Pratama</title>
+	<meta name="description" content="Current Branch : *master* Time Compiled : 7/10/2016, 6:17:21 AM ~BLENDER AUTHOR HASH MESSAGE TIME Lukas Stockner 2a69b09 Fix T48732 v2: New GGX breaks OpenCL kernel 2 days ago Bastien Montagne aff81c6 Cleanup: Get rid of remaining ‘BKE__unlink()’ functions ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,16 +14,24 @@
 	<meta name="twitter:creator" content="@aditia_ap">
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
-	<meta property="og:title" content="Blender Log">
-	<meta property="og:description" content="Current Branch : master BLENDER user hash comment time Lukas Stockner 2a69b09 Fix T48732 v2: New GGX breaks OpenCL kernel 2 days ago Bastien Montagne aff81c6 Cleanup: Get rid of remaining ‘BKE__unlink()’ functions, no more used anyway. 2 days ago Bastien Montagne ...">
+	<meta property="og:title" content="Blender Logs">
+	<meta property="og:description" content="Current Branch : *master* Time Compiled : 7/10/2016, 6:17:21 AM ~BLENDER AUTHOR HASH MESSAGE TIME Lukas Stockner 2a69b09 Fix T48732 v2: New GGX breaks OpenCL kernel 2 days ago Bastien Montagne aff81c6 Cleanup: Get rid of remaining ‘BKE__unlink()’ functions ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.aditia.pawitra.id/blender-log/">
+	<meta property="og:url" content="http://www.aditia.pawitra.id/blender-logs/">
 
 	<!-- Stylesheets and Web Fonts -->
+
+	<!-- Material Design Lite -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-amber.min.css" />
+
 	<link href="/theme/style.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Source+Code+Pro" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://www.aditia.pawitra.id/theme/pygments/monokai.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Inconsolata" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
@@ -43,9 +51,9 @@
 	<link rel="icon" type="image/png" href="/images/icons/favicon-160x160.png" sizes="160x160">
 	<link rel="icon" type="image/png" href="/images/icons/favicon-196x196.png" sizes="196x196">
 
-	<meta name="theme-color" content="#FFC107">
+	<meta name="theme-color" content="#455A64">
 
-	<meta name="msapplication-TileColor" content="#FFC107">
+	<meta name="msapplication-TileColor" content="#455A64">
 	<meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
 	<meta name="msapplication-square70x70logo" content="/images/icons/mstile-small.png">
 	<meta name="msapplication-square150x150logo" content="/images/icons/mstile-medium.png">
@@ -71,65 +79,71 @@
 
 
 					<div id="social">
-						<a href="mailto:aditia@pawitra.id" title="Email (aditia@pawitra.id)" class="icon fa fa-envelope"></a>
-						<a href="http://twitter.com/aditia_ap" title="Twitter" class="icon fa fa-twitter"></a>
-						<a href="http://github.com/aditiapratama" title="GitHub" class="icon fa fa-github"></a>
-						<a href="/atom.xml" title="Atom Feed" class="icon fa fa-rss"></a>
+						<div id="fa-envelope" class="mdl-icon">
+							<div class="mdl-tooltip" for="fa-envelope">Email (aditia@pawitra.id)</div>
+							<a href="mailto:aditia@pawitra.id" class="icon fa fa-envelope"></a>
+						</div>
+						<div id="fa-twitter" class="mdl-icon">
+							<div class="mdl-tooltip" for="fa-twitter">Twitter</div>
+							<a href="http://twitter.com/aditia_ap" class="icon fa fa-twitter"></a>
+						</div>
+						<div id="fa-github" class="mdl-icon">
+							<div class="mdl-tooltip" for="fa-github">GitHub</div>
+							<a href="http://github.com/aditiapratama" class="icon fa fa-github"></a>
+						</div>
+						<div id="fa-rss" class="mdl-icon">
+							<div class="mdl-tooltip" for="fa-rss">Atom Feed</div>
+							<a href="/atom.xml" class="icon fa fa-rss"></a>
+						</div>
+						<div id="bf-network" class="mdl-icon">
+							<div class="mdl-tooltip" for="bf-network">Blender Network</div>
+							<a href="https://www.blendernetwork.org/aditia-pratama" class="icon bf-network"></a>
+						</div>
 					</div>
-
 
 
 					<div id="sidebar-links">
-						<a href="/about/">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/archive/">Archive</a>
+							<a href="/blender-logs/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="bf-blender"></i> Commit Logs</button></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/about/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/archive/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Archive</button></a>
 					</div>
-
 
 					<hr id="sidebar-divider">
 				</li>
 			</ul>
 		</div>
 
-		<div id="menu-toggle">
-			<a href="#menu-toggle">
-				<span class="octicon octicon-list-unordered"></span>
-			</a>
-		</div>
-
-		<div id="page-content-wrapper">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12">
-				<!-- <aside>
-					<a href="/"><img id="avatar" alt="Site Avatar" src="/images/icons/aditia_mugshot.jpg"></a>
-					<div id="name"><a href="/">Aditia A. Pratama</a></div>
-					<div id="bio">CG Instructor and Developer from Bandung, Indonesia.</div>
-
-					<div id="sidebar-links">
-						<a href="/about/">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/archive/">Archive</a>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<div class="mdl-layout__header">
+				<div class="mdl-layout__header-row">
+					<!-- <div class="mdl-layout-spacer"></div> -->
+					<div id="menu-toggle">
+						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="toggle-sidebar">
+  						<input type="checkbox" id="toggle-sidebar" class="mdl-switch__input">
+  							<span class="mdl-switch__label"></span>
+						</label>
 					</div>
+					<div class="mdl-layout-spacer"></div>
+				</div>
+			</div>
 
-					<div id="social">
-						<a href="mailto:aditia@pawitra.id" title="Email (aditia@pawitra.id)" class="icon fa fa-envelope"></a>
-						<a href="http://twitter.com/aditia_ap" title="Twitter" class="icon fa fa-twitter"></a>
-						<a href="http://github.com/aditiapratama" title="GitHub" class="icon fa fa-github"></a>
-						<a href="/atom.xml" title="Atom Feed" class="icon fa fa-rss"></a>
-					</div>
-
-					<hr id="sidebar-divider">
-				</aside> -->
-
-						<article>
-	<h1 class="title"><a href="/blender-log/" title="Blender Log">Blender&nbsp;Log</a></h1>
+			<main class="mdl-layout__content">
+				<div id="page-content-wrapper">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-12">
+								<article>
+	<h1 class="title"><a href="/blender-logs/" title="Blender Logs">Blender&nbsp;Logs</a></h1>
 	<div class="content">
-		<h2>Current Branch : <img alt="alt text" src="../images/icons/blender_48.png" /> <em>master</em></h2>
-<h4><span class="caps">BLENDER</span></h4>
+		<h2>Current Branch : <code>*master*</code></h2>
+<h3>Time Compiled : <strong>7/10/2016, 6:17:21 <span class="caps">AM</span></strong></h3>
+<hr />
+<h1>~<span class="caps">BLENDER</span></h1>
 <table>
 <thead>
 <tr>
-<th>user</th>
-<th>hash</th>
-<th>comment</th>
-<th>time</th>
+<th><strong><span class="caps">AUTHOR</span></strong></th>
+<th><strong><span class="caps">HASH</span></strong></th>
+<th><strong><span class="caps">MESSAGE</span></strong></th>
+<th><strong><span class="caps">TIME</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -315,14 +329,15 @@
 </tr>
 </tbody>
 </table>
-<h3><span class="caps">ADDONS</span></h3>
+<hr />
+<h1>~<span class="caps">ADDONS</span></h1>
 <table>
 <thead>
 <tr>
-<th>user</th>
-<th>hash</th>
-<th>comment</th>
-<th>time</th>
+<th><strong><span class="caps">AUTHOR</span></strong></th>
+<th><strong><span class="caps">HASH</span></strong></th>
+<th><strong><span class="caps">MESSAGE</span></strong></th>
+<th><strong><span class="caps">TIME</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -418,14 +433,15 @@
 </tr>
 </tbody>
 </table>
-<h3><span class="caps">ADDONS</span> <span class="caps">CONTRIB</span></h3>
+<hr />
+<h1>~<span class="caps">ADDONS</span> <span class="caps">CONTRIB</span></h1>
 <table>
 <thead>
 <tr>
-<th>user</th>
-<th>hash</th>
-<th>comment</th>
-<th>time</th>
+<th><strong><span class="caps">AUTHOR</span></strong></th>
+<th><strong><span class="caps">HASH</span></strong></th>
+<th><strong><span class="caps">MESSAGE</span></strong></th>
+<th><strong><span class="caps">TIME</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -521,14 +537,15 @@
 </tr>
 </tbody>
 </table>
-<h3><span class="caps">BAM</span></h3>
+<hr />
+<h1>~<span class="caps">BAM</span></h1>
 <table>
 <thead>
 <tr>
-<th>user</th>
-<th>hash</th>
-<th>comment</th>
-<th>time</th>
+<th><strong><span class="caps">AUTHOR</span></strong></th>
+<th><strong><span class="caps">HASH</span></strong></th>
+<th><strong><span class="caps">MESSAGE</span></strong></th>
+<th><strong><span class="caps">TIME</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -624,14 +641,15 @@
 </tr>
 </tbody>
 </table>
-<h3><span class="caps">FLAMENCO</span></h3>
+<hr />
+<h1>~<span class="caps">FLAMENCO</span></h1>
 <table>
 <thead>
 <tr>
-<th>user</th>
-<th>hash</th>
-<th>comment</th>
-<th>time</th>
+<th><strong><span class="caps">AUTHOR</span></strong></th>
+<th><strong><span class="caps">HASH</span></strong></th>
+<th><strong><span class="caps">MESSAGE</span></strong></th>
+<th><strong><span class="caps">TIME</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -727,12 +745,13 @@
 </tr>
 </tbody>
 </table>
-<h3><span class="caps">BLENDER</span> <span class="caps">MANUAL</span></h3>
+<hr />
+<h4><span class="caps">BLENDER</span> <span class="caps">MANUAL</span></h4>
 <table>
 <thead>
 <tr>
-<th>rev</th>
-<th>user</th>
+<th><strong><span class="caps">REV</span></strong></th>
+<th><strong><span class="caps">DEVS</span></strong></th>
 <th>date</th>
 <th>time</th>
 <th>comment</th>
@@ -741,23 +760,45 @@
 <tbody></tbody>
 </table>
 	</div>
-	<div id="back-to-home"><a href="/">&laquo; Back to Home</a></div>
-							<hr>
-						</article>
+	<div id="back-to-home">
+		<a href="/">
+			<span id="page-back-to-home">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+					<i class="material-icons" role="presentation">home</i>
+				</button>
+			</span>
+			<span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right" for="page-back-to-home">Back to Home</span>
+			<!-- &laquo; Back to Home</a> -->
+	</div>
+									<hr>
+								</article>
 
-						<footer>
-							<p><i class="octicon octicon-code"></i> with <i class="octicon octicon-heart"></i> | Powered by <a href="http://getpelican.com">Pelican</a></p>
-						</footer>
+								<footer>
+									<p><i class="octicon octicon-code"></i> with <i class="octicon octicon-heart"></i> | Powered by <a href="http://getpelican.com">Pelican</a></p>
+								</footer>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+			</main>
 		</div>
 	</div>
 
 
 	<script src="/theme/js/jquery.min.js" charset="utf-8"></script>
+	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 	<script src="/theme/js/main.js" charset="utf-8"></script>
 
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-80719674-1', 'aditia.pawitra.id');
+		ga('send', 'pageview');
+	</script>
 
 </body>
 </html>

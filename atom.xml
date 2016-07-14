@@ -1,3 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Aditia A. Pratama</title><link href="http://www.aditia.pawitra.id/" rel="alternate"></link><link href="http://www.aditia.pawitra.id/atom.xml" rel="self"></link><id>http://www.aditia.pawitra.id/</id><updated>2016-06-19T17:18:00+07:00</updated><entry><title>Blogging with Pelican and Travis CI</title><link href="http://www.aditia.pawitra.id/2016/06/blogging-with-pelican-and-travis-ci/" rel="alternate"></link><published>2016-06-19T17:18:00+07:00</published><author><name></name></author><id>tag:www.aditia.pawitra.id,2016-06-19:2016/06/blogging-with-pelican-and-travis-ci/</id><summary type="html">&lt;p&gt;This blog is build using static site generator pelican and Travis Ci for automatic deploy. I&amp;#8217;ll update this post for more&amp;nbsp;how-to.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Aditia A. Pratama</title><link href="http://www.aditia.pawitra.id/" rel="alternate"></link><link href="http://www.aditia.pawitra.id/atom.xml" rel="self"></link><id>http://www.aditia.pawitra.id/</id><updated>2016-07-14T15:52:24+07:00</updated><entry><title>How to Install Krita in Fedora</title><link href="http://www.aditia.pawitra.id/2016/07/how-to-install-krita-in-fedora/" rel="alternate"></link><published>2016-07-14T15:52:24+07:00</published><author><name></name></author><id>tag:www.aditia.pawitra.id,2016-07-14:2016/07/how-to-install-krita-in-fedora/</id><summary type="html">&lt;p&gt;In this quick tips, I want to show you how to install Krita in linux in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using &lt;a href="http://appimage.org/"&gt;appimage&lt;/a&gt; for universal linux&amp;nbsp;distribution.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First we need to make directory for krita, I prefer in &lt;code&gt;/opt/krita-app/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# make directory&lt;/span&gt;
+sudo mkdir /opt/krita-app/
+
+&lt;span class="c1"&gt;# give permission to directory&lt;/span&gt;
+sudo chown -R &amp;lt;your-username-here&amp;gt;:nogroup /opt/krita-app/
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Now we can download krita appimage from official website &lt;a href="https://krita.org/en/download/krita-desktop/"&gt;krita.org&lt;/a&gt;, or using below script to download directly to &lt;code&gt;/opt/krita-app/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# download krita&lt;/span&gt;
+wget -c -P /opt/krita-app/ http://files.kde.org/krita/3/linux/krita-3.0-x86_64.appimage
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;After download has finished, we can rename and link the krita appimage to &lt;code&gt;/usr/local&lt;/code&gt; or any &lt;code&gt;$PATH&lt;/code&gt;, so we can call it&amp;nbsp;directly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# rename krita appimage&lt;/span&gt;
+mv /opt/krita-app/krita-3.0-x86_64.appimage /opt/krita-app/krita.appimage
+
+&lt;span class="c1"&gt;# link to /usr/local/&lt;/span&gt;
+sudo ln -s /opt/krita-app/krita.appimage /usr/local/bin/krita
+
+&lt;span class="c1"&gt;# make sure to mark executable for it&lt;/span&gt;
+sudo chmod +x /usr/local/bin/krita
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;After this last step, we can call krita from terminal or create &lt;code&gt;.desktop&lt;/code&gt; file for&amp;nbsp;it.&lt;/li&gt;
+&lt;li&gt;As additional here&amp;#8217;s I paste my &lt;code&gt;.desktop&lt;/code&gt; file in &lt;code&gt;$HOME/.local/share/applications/krita.desktop&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[Desktop Entry]                                                                    
+Name=Krita
+Exec=krita %U
+GenericName=Digital Painting
+MimeType=application/x-krita;image/openraster;application/x-krita-paintoppreset;
+Comment=Digital Painting
+Type=Application
+Icon=krita
+Categories=Qt;KDE;Graphics;
+X-KDE-ServiceTypes=Calligra/Application
+X-Calligra-DefaultMimeTypes=application/x-krita
+X-KDE-NativeMimeType=application/x-krita
+X-KDE-ExtraNativeMimeTypes=
+StartupNotify=true
+X-DBUS-StartupType=Multi
+X-DBUS-ServiceName=org.krita.krita
+X-Krita-Version=30
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;em&gt;Hope you find this post&amp;nbsp;useful.&lt;/em&gt;&lt;/p&gt;</summary></entry><entry><title>Blogging with Pelican and Travis CI</title><link href="http://www.aditia.pawitra.id/2016/06/blogging-with-pelican-and-travis-ci/" rel="alternate"></link><published>2016-06-19T17:18:00+07:00</published><author><name></name></author><id>tag:www.aditia.pawitra.id,2016-06-19:2016/06/blogging-with-pelican-and-travis-ci/</id><summary type="html">&lt;p&gt;This blog is build using static site generator pelican and Travis Ci for automatic deploy. I&amp;#8217;ll update this post for more&amp;nbsp;how-to.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Stay&amp;nbsp;tune&lt;/em&gt;&lt;/p&gt;</summary></entry><entry><title>This is Awesome</title><link href="http://www.aditia.pawitra.id/2016/06/this-is-awesome/" rel="alternate"></link><published>2016-06-17T22:19:15+07:00</published><author><name></name></author><id>tag:www.aditia.pawitra.id,2016-06-17:2016/06/this-is-awesome/</id><summary type="html">&lt;p&gt;Hello World, I&amp;#8217;m back online in my blog. Hopefully I can share any beneficial things to the world. Please, feel free to get in touch with me via email or&amp;nbsp;twitter.&lt;/p&gt;</summary></entry></feed>

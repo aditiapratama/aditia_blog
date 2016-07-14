@@ -3,8 +3,8 @@
 <head>
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
-	<title>About | Aditia A. Pratama</title>
-	<meta name="description" content="I’ll write here later">
+	<title>How to Install Krita in Fedora | Aditia A. Pratama</title>
+	<meta name="description" content="In this quick tips, I want to show you how to install Krita in linux in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using appimage for universal linux distribution. First we ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,11 +14,11 @@
 	<meta name="twitter:creator" content="@aditia_ap">
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
-	<meta property="og:title" content="About">
-	<meta property="og:description" content="I’ll write here later">
+	<meta property="og:title" content="How to Install Krita in Fedora">
+	<meta property="og:description" content="In this quick tips, I want to show you how to install Krita in linux in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using appimage for universal linux distribution. First we ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.aditia.pawitra.id/about/">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://www.aditia.pawitra.id/2016/07/how-to-install-krita-in-fedora/">
 
 	<!-- Stylesheets and Web Fonts -->
 
@@ -131,20 +131,110 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<article>
-	<h1 class="title"><a href="/about/" title="About">About</a></h1>
+	<h1 class="title"><a href="/2016/07/how-to-install-krita-in-fedora/" title="Permalink to How to Install Krita in Fedora">How to Install Krita in&nbsp;Fedora</a></h1>
+	<time class="date" datetime="2016-07-14 15:52:24+07:00">July 14, 2016</time>
 	<div class="content">
-		<p>I&#8217;ll write here&nbsp;later</p>
+		<p>In this quick tips, I want to show you how to install Krita in linux in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using <a href="http://appimage.org/">appimage</a> for universal linux&nbsp;distribution.</p>
+<ul>
+<li>First we need to make directory for krita, I prefer in <code>/opt/krita-app/</code>.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># make directory</span>
+sudo mkdir /opt/krita-app/
+
+<span class="c1"># give permission to directory</span>
+sudo chown -R &lt;your-username-here&gt;:nogroup /opt/krita-app/
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>Now we can download krita appimage from official website <a href="https://krita.org/en/download/krita-desktop/">krita.org</a>, or using below script to download directly to <code>/opt/krita-app/</code></li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># download krita</span>
+wget -c -P /opt/krita-app/ http://files.kde.org/krita/3/linux/krita-3.0-x86_64.appimage
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>After download has finished, we can rename and link the krita appimage to <code>/usr/local</code> or any <code>$PATH</code>, so we can call it&nbsp;directly.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># rename krita appimage</span>
+mv /opt/krita-app/krita-3.0-x86_64.appimage /opt/krita-app/krita.appimage
+
+<span class="c1"># link to /usr/local/</span>
+sudo ln -s /opt/krita-app/krita.appimage /usr/local/bin/krita
+
+<span class="c1"># make sure to mark executable for it</span>
+sudo chmod +x /usr/local/bin/krita
+</pre></div>
+</td></tr></table>
+
+<ul>
+<li>After this last step, we can call krita from terminal or create <code>.desktop</code> file for&nbsp;it.</li>
+<li>As additional here&#8217;s I paste my <code>.desktop</code> file in <code>$HOME/.local/share/applications/krita.desktop</code></li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[Desktop Entry]                                                                    
+Name=Krita
+Exec=krita %U
+GenericName=Digital Painting
+MimeType=application/x-krita;image/openraster;application/x-krita-paintoppreset;
+Comment=Digital Painting
+Type=Application
+Icon=krita
+Categories=Qt;KDE;Graphics;
+X-KDE-ServiceTypes=Calligra/Application
+X-Calligra-DefaultMimeTypes=application/x-krita
+X-KDE-NativeMimeType=application/x-krita
+X-KDE-ExtraNativeMimeTypes=
+StartupNotify=true
+X-DBUS-StartupType=Multi
+X-DBUS-ServiceName=org.krita.krita
+X-Krita-Version=30
+</pre></div>
+</td></tr></table>
+
+<p><em>Hope you find this post&nbsp;useful.</em></p>
 	</div>
-	<div id="back-to-home">
-		<a href="/">
-			<span id="page-back-to-home">
+
+	<div id="related-articles">
+		<a href="/2016/06/blogging-with-pelican-and-travis-ci/" id="prev-neighbour">
+			<span id="article-prev">
 				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-					<i class="material-icons" role="presentation">home</i>
+					<i class="material-icons" role="presentation">navigate_next</i>
 				</button>
 			</span>
-			<span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right" for="page-back-to-home">Back to Home</span>
-			<!-- &laquo; Back to Home</a> -->
+			<span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left" for="article-prev">Blogging with Pelican and Travis CI</span>
+			<!-- Blogging with Pelican and Travis CI &raquo; -->
+		</a>
 	</div>
+
 									<hr>
 								</article>
 
