@@ -78,6 +78,8 @@ MD_EXTENSIONS = ['admonition','fenced_code','codehilite(linenums=True)','extra']
 #     'markdown.extensions.extra',
 # ]
 
+GOOGLE_ANALYTICS = 'UA-80719674-1'
+
 CACHE_CONTENT = False
 DELETE_OUTPUT_DIRECTORY = True
 OUTPUT_PATH = 'develop'
