@@ -2,7 +2,7 @@ Title: How to Install Krita in Fedora
 Date: 7/14/2016, 3:52:24 PM
 Category: linux, install, apps, krita, tips
 
-In this quick tips, I want to show you how to install Krita in linux in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using [appimage](http://appimage.org/) for universal linux distribution.
+In this quick tips, I want to show you how to install Krita in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using [appimage](http://appimage.org/) for universal linux distribution.
 
 - First we need to make directory for krita, I prefer in `/opt/krita-app/`.
 ```bash
