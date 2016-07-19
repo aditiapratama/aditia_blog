@@ -67,6 +67,12 @@ html:
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
+clean-pyc:
+	find . -path $(BASEDIR) -prune -o -name '*.pyc' -exec rm -f {} +
+	find . -path $(BASEDIR) -prune -o -name '*.pyo' -exec rm -f {} +
+	find . -path $(BASEDIR) -prune -o -name '*~' -exec rm -f {} +
+	find . -path $(BASEDIR) -prune -o -name '__pycache__' -exec rm -f -R {} +
+
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 

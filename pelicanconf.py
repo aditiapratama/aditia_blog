@@ -6,16 +6,16 @@ from __future__ import unicode_literals
 
 SITENAME = "Aditia A. Pratama"
 DOMAIN = 'aditia.pawitra.id'
-BIO_TEXT = 'CG Instructor and Developer from Bandung, Indonesia.'
+BIO_TEXT = 'Co-Founder and Technical Director at <a href="http://pawitrastudio.com">Pawitra Studio</a>. CG Instructor, Developer from Bandung, Indonesia.'
 FOOTER_TEXT = '<i class="octicon octicon-code"></i> with <i class="octicon octicon-heart"></i> | Powered by <a href="http://getpelican.com">Pelican</a>'
 
 SITE_AUTHOR = 'Aditia A. Pratama'
 TWITTER_USERNAME = '@aditia_ap'
 GOOGLE_PLUS_URL = ''
-INDEX_DESCRIPTION = 'Random Thoughts and Technical Notes from Aditia A. Pratama, a CG instructor and  developer from Bandung, Indonesia.'
+INDEX_DESCRIPTION = 'Random Thoughts and Technical Notes from Aditia A. Pratama, a Technical Director, CG instructor and  developer from Bandung, Indonesia.'
 
 SIDEBAR_LINKS = [
-            '<a href="/blender-logs/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="bf-blender"></i> Commit Logs</button></a>',
+            '<a href="/commit-logs/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="bf-blender"></i> Commit Logs</button></a>',
             '<a href="/about/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a>',
             '<a href="/archive/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Archive</button></a>'
         ]
@@ -89,7 +89,7 @@ templates = ['404.html']
 TEMPLATE_PAGES = {page: page for page in templates}
 
 STATIC_PATHS = ['images', 'uploads', 'extra']
-IGNORE_FILES = ['.DS_Store', 'main.css', 'pneumatic.scss', 'pygments.css', 'main.scss', '_octicons.scss', '_variables.scss', 'css']
+IGNORE_FILES = ['.DS_Store', 'main.css', 'pneumatic.scss', 'pygments.css', 'main.scss', '_octicons.scss', '_variables.scss', 'css', 'js-dev']
 
 extras = ['CNAME', 'favicon.ico', 'keybase.txt', 'robots.txt']
 EXTRA_PATH_METADATA = {'extra/%s' % file: {'path': file} for file in extras}
