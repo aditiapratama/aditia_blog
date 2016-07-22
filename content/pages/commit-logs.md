@@ -1,27 +1,27 @@
 title: Commit Logs
 ***
 ## <i class="bf-blender"></i> BLENDER - `current branch : master`
-###  - Compiled : <time class="timeago" datetime="Tue Jul 19 06:59:42 UTC 2016">*Tue Jul 19 06:59:42 UTC 2016*</time>
+###  - Compiled : <time class="timeago" datetime="Fri Jul 22 00:35:46 UTC 2016">*Fri Jul 22 00:35:46 UTC 2016*</time>
 ***
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
-Campbell Barton | [`95da688`](https://developer.blender.org/rB95da688) | Fix missing break in libblock relink
-Campbell Barton | [`3948f65`](https://developer.blender.org/rB3948f65) | Cleanup: style, spelling
-Campbell Barton | [`bd59206`](https://developer.blender.org/rBbd59206) | Cleanup: style, spelling
-Brecht Van Lommel | [`5234e9d`](https://developer.blender.org/rB5234e9d) | Cycles: add ConstantFolder class for constant folding boilerplate.
-Brecht Van Lommel | [`10b0e33`](https://developer.blender.org/rB10b0e33) | Cycles: add support for motion blurring of fluid meshes.
-Brecht Van Lommel | [`20ec6bc`](https://developer.blender.org/rB20ec6bc) | Fix Cycles kernel build without render passes support.
-Campbell Barton | [`277cb12`](https://developer.blender.org/rB277cb12) | Fix T48874: Nested pop-up didn't update its parent
-lazydodo | [`399c978`](https://developer.blender.org/rB399c978) | fix breakage caused by D2094 / rB404f41d22de46119ee8afb409011eb1ba1840092
-Campbell Barton | [`ffe106a`](https://developer.blender.org/rBffe106a) | Docs: improve bpy.props.EnumProperty reference
-Campbell Barton | [`a99dbb9`](https://developer.blender.org/rBa99dbb9) | Fix T48885: Wheel in image space changes wrong window
-Campbell Barton | [`de0f371`](https://developer.blender.org/rBde0f371) | Fix missing release w/ mouse wheel over layer menu
-Sergey Sharybin | [`404f41d`](https://developer.blender.org/rB404f41d) | [bf_intern_ghost/Windows] Cleanup
-Sergey Sharybin | [`a76e69f`](https://developer.blender.org/rBa76e69f) | Additional Waveform Drawing Mode
-Sergey Sharybin | [`3e882c9`](https://developer.blender.org/rB3e882c9) | [MSVC2015/Cycles] MSVC2015 before update 3 produce invalid builds
-Sergey Sharybin | [`6239afd`](https://developer.blender.org/rB6239afd) | [MSVC/LNK4199/Cleanup] Delay loading is causing linker warnings.
-Bastien Montagne | [`65e7caf`](https://developer.blender.org/rB65e7caf) | Fix (unreported) ED_region_tag_redraw_partial() could override a previously defined partial redraw, instead of extending it.
-Sergey Sharybin | [`bbc1507`](https://developer.blender.org/rBbbc1507) | Fix T48848: Cycles - Camera Culling - Camera Culling removes objects which are still in frame
-Campbell Barton | [`6533d72`](https://developer.blender.org/rB6533d72) | Fix T48877: Lightmap Pack fails w/ 1-3 faces
-Campbell Barton | [`d42cb44`](https://developer.blender.org/rBd42cb44) | CMake: correct py-module on OSX
-Sergey Sharybin | [`9946cca`](https://developer.blender.org/rB9946cca) | Fix T48860: Cycles SSS artifacts with spatially split BVH
+Mike Erwin | [`08e1bba`](https://developer.blender.org/rB08e1bba) | fix confusing operator precedence
+Mike Erwin | [`9ff8d4a`](https://developer.blender.org/rB9ff8d4a) | fix enum type / values mismatch
+Mike Erwin | [`7c99b71`](https://developer.blender.org/rB7c99b71) | fix null pointer dereferences
+Mike Erwin | [`23f1b20`](https://developer.blender.org/rB23f1b20) | fix comparison of identicals
+Campbell Barton | [`d1f9342`](https://developer.blender.org/rBd1f9342) | Cleanup: pass pointer to texture draw state
+Campbell Barton | [`cddef55`](https://developer.blender.org/rBcddef55) | BMesh: compare face angles as angles cosine
+Bastien Montagne | [`875c131`](https://developer.blender.org/rB875c131) | Fix broken proxy object deletion.
+Mike Erwin | [`6ebce7e`](https://developer.blender.org/rB6ebce7e) | fix typo in condition
+Germano Cavalcante | [`b5ba14e`](https://developer.blender.org/rBb5ba14e) | Fix T48915: Wrong threshold on scaled objects and ortho view.
+Campbell Barton | [`14995c5`](https://developer.blender.org/rB14995c5) | Fix crash w/ auto-insert offset
+Campbell Barton | [`1cc0ce5`](https://developer.blender.org/rB1cc0ce5) | Cleanup: warnings
+Mike Erwin | [`9279bee`](https://developer.blender.org/rB9279bee) | remove repeated codec-supports-alpha check
+Sergey Sharybin | [`9d0cbbe`](https://developer.blender.org/rB9d0cbbe) | Tracking: Fix bug when tracker will keep trying tracking past the footage
+Bastien Montagne | [`aedff9d`](https://developer.blender.org/rBaedff9d) | Add BKE_mesh_calc_islands_loop_poly_uvmap and use it in new OSD UV subdiv.
+Bastien Montagne | [`db0c2be`](https://developer.blender.org/rBdb0c2be) | BKE mesh mapping: add new BKE_mesh_edge_loop_map_create().
+Bastien Montagne | [`d4342b3`](https://developer.blender.org/rBd4342b3) | Fix (unreported) memleak in image copy function.
+Bastien Montagne | [`2969b30`](https://developer.blender.org/rB2969b30) | Fix stupid (harmless) mistake in recent commit.
+Bastien Montagne | [`77ff125`](https://developer.blender.org/rB77ff125) | BKE_library_make_local: clear behind us no more used linked datablocks.
+Bastien Montagne | [`af2deb5`](https://developer.blender.org/rBaf2deb5) | Fix (unreported) crash in some case when remapping armature data.
+Bastien Montagne | [`b156674`](https://developer.blender.org/rBb156674) | Fix missing datablocks types in id_make_local.
