@@ -1,27 +1,27 @@
 title: Commit Logs
 ***
 ## <i class="bf-blender"></i> BLENDER - `current branch : master`
-###  - Compiled : <time class="timeago" datetime="Fri Jul 22 00:35:46 UTC 2016">*Fri Jul 22 00:35:46 UTC 2016*</time>
+###  - Compiled : <time class="timeago" datetime="Sat Jul 23 22:47:33 UTC 2016">*Sat Jul 23 22:47:33 UTC 2016*</time>
 ***
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
+Jörg Müller | [`4cbefde`](https://developer.blender.org/rB4cbefde) | Audaspace: fix incorrect parameter check in python API.
+Campbell Barton | [`8001854`](https://developer.blender.org/rB8001854) | Cleanup: style
+Campbell Barton | [`6ef37fa`](https://developer.blender.org/rB6ef37fa) | Cleanup: warning
+Mike Erwin | [`bd11d91`](https://developer.blender.org/rBbd11d91) | fix atan2f input conditional
+Sergey Sharybin | [`164575a`](https://developer.blender.org/rB164575a) | OpenSubdiv: Properly respect Subdivide UVs option
+Julian Eisel | [`7ca4cf2`](https://developer.blender.org/rB7ca4cf2) | Fix crash using ID remapping on invalid ID pairs
+Sergey Sharybin | [`9c63878`](https://developer.blender.org/rB9c63878) | OpenSubdiv: Initial support of UV maps in material shading mode
+Sergey Sharybin | [`b2f91d8`](https://developer.blender.org/rBb2f91d8) | OpenSubdiv: Use BLI module math functions
+Sergey Sharybin | [`165f710`](https://developer.blender.org/rB165f710) | OpenSubdiv: Make drawing code a bit more flexible for FVar width
+Sergey Sharybin | [`ccd51bb`](https://developer.blender.org/rBccd51bb) | OpenSubdiv: Properly support active UV layer in textured view
+Sergey Sharybin | [`48c4b70`](https://developer.blender.org/rB48c4b70) | OpenSubdiv: Lay down fundamentals to support multiple UV maps
+Sergey Sharybin | [`98970f7`](https://developer.blender.org/rB98970f7) | OpenSubdiv: Get number of UVs from topology refiner
+Sergey Sharybin | [`177c4af`](https://developer.blender.org/rB177c4af) | OpenSubdiv: Cleanup, please don't use insanely long lines
+Sergey Sharybin | [`adf97ed`](https://developer.blender.org/rBadf97ed) | OpenSubdiv: Cleanup, don't use camel case for variable names
+Campbell Barton | [`e803786`](https://developer.blender.org/rBe803786) | Correct mistake comparing vertices
+Mike Erwin | [`a7e742f`](https://developer.blender.org/rBa7e742f) | use bool consistently, fix redundant conditional
+Mike Erwin | [`2b77b1c`](https://developer.blender.org/rB2b77b1c) | remove double-checked conditions
+Campbell Barton | [`bd52875`](https://developer.blender.org/rBbd52875) | Add Subdivide Edge-Ring to menu
+Campbell Barton | [`192df29`](https://developer.blender.org/rB192df29) | Fix T48926: Subdivide edge-ring crash
 Mike Erwin | [`08e1bba`](https://developer.blender.org/rB08e1bba) | fix confusing operator precedence
-Mike Erwin | [`9ff8d4a`](https://developer.blender.org/rB9ff8d4a) | fix enum type / values mismatch
-Mike Erwin | [`7c99b71`](https://developer.blender.org/rB7c99b71) | fix null pointer dereferences
-Mike Erwin | [`23f1b20`](https://developer.blender.org/rB23f1b20) | fix comparison of identicals
-Campbell Barton | [`d1f9342`](https://developer.blender.org/rBd1f9342) | Cleanup: pass pointer to texture draw state
-Campbell Barton | [`cddef55`](https://developer.blender.org/rBcddef55) | BMesh: compare face angles as angles cosine
-Bastien Montagne | [`875c131`](https://developer.blender.org/rB875c131) | Fix broken proxy object deletion.
-Mike Erwin | [`6ebce7e`](https://developer.blender.org/rB6ebce7e) | fix typo in condition
-Germano Cavalcante | [`b5ba14e`](https://developer.blender.org/rBb5ba14e) | Fix T48915: Wrong threshold on scaled objects and ortho view.
-Campbell Barton | [`14995c5`](https://developer.blender.org/rB14995c5) | Fix crash w/ auto-insert offset
-Campbell Barton | [`1cc0ce5`](https://developer.blender.org/rB1cc0ce5) | Cleanup: warnings
-Mike Erwin | [`9279bee`](https://developer.blender.org/rB9279bee) | remove repeated codec-supports-alpha check
-Sergey Sharybin | [`9d0cbbe`](https://developer.blender.org/rB9d0cbbe) | Tracking: Fix bug when tracker will keep trying tracking past the footage
-Bastien Montagne | [`aedff9d`](https://developer.blender.org/rBaedff9d) | Add BKE_mesh_calc_islands_loop_poly_uvmap and use it in new OSD UV subdiv.
-Bastien Montagne | [`db0c2be`](https://developer.blender.org/rBdb0c2be) | BKE mesh mapping: add new BKE_mesh_edge_loop_map_create().
-Bastien Montagne | [`d4342b3`](https://developer.blender.org/rBd4342b3) | Fix (unreported) memleak in image copy function.
-Bastien Montagne | [`2969b30`](https://developer.blender.org/rB2969b30) | Fix stupid (harmless) mistake in recent commit.
-Bastien Montagne | [`77ff125`](https://developer.blender.org/rB77ff125) | BKE_library_make_local: clear behind us no more used linked datablocks.
-Bastien Montagne | [`af2deb5`](https://developer.blender.org/rBaf2deb5) | Fix (unreported) crash in some case when remapping armature data.
-Bastien Montagne | [`b156674`](https://developer.blender.org/rBb156674) | Fix missing datablocks types in id_make_local.
