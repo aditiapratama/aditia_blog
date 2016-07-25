@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - current branch : master - Compiled : Sat Jul 23 22:47:33 UTC 2016 AUTHOR HASH MESSAGE Jörg Müller 4cbefde Audaspace: fix incorrect parameter check in python API. Campbell Barton 8001854 Cleanup: style Campbell Barton 6ef37fa Cleanup: warning Mike Erwin bd11d91 fix atan2f ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Mon, 25 Jul 2016 08:42:59 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel f23fecf Fix use of uninitialized variable in recent SSS fix. Kévin Dietrich f283aa6 Fix T48397: Can not bake tweaked NLA Kévin Dietrich e4efa16 Fix ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - current branch : master - Compiled : Sat Jul 23 22:47:33 UTC 2016 AUTHOR HASH MESSAGE Jörg Müller 4cbefde Audaspace: fix incorrect parameter check in python API. Campbell Barton 8001854 Cleanup: style Campbell Barton 6ef37fa Cleanup: warning Mike Erwin bd11d91 fix atan2f ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Mon, 25 Jul 2016 08:42:59 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel f23fecf Fix use of uninitialized variable in recent SSS fix. Kévin Dietrich f283aa6 Fix T48397: Can not bake tweaked NLA Kévin Dietrich e4efa16 Fix ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -81,33 +81,65 @@
 					<div id="name"><a href="/">Aditia A. Pratama</a></div>
 					<div id="bio">Co-Founder and Technical Director at <a href="http://pawitrastudio.com">Pawitra Studio</a>. CG Instructor, Developer from Bandung, Indonesia.</div>
 
+						<div id="sidebar-links">
+							<ul>
+									<li>
+										<span class="mdl-custom">
+											<a href="/">
+												<i class="octicon octicon-home"></i> Home
+											</a>
+										</span>
+									</li>
+								<!-- ('/', 'Home', 'octicon octicon-home')&nbsp;&nbsp;|&nbsp;&nbsp;('/about/', 'About', 'octicon octicon-repo')&nbsp;&nbsp;|&nbsp;&nbsp;('/commit-logs', 'Commit Logs', 'bf bf-blender')&nbsp;&nbsp;|&nbsp;&nbsp;('/archive/', 'Archive', 'octicon octicon-file-zip') -->
+									<li>
+										<span class="mdl-custom">
+											<a href="/about/">
+												<i class="octicon octicon-repo"></i> About
+											</a>
+										</span>
+									</li>
+								<!-- ('/', 'Home', 'octicon octicon-home')&nbsp;&nbsp;|&nbsp;&nbsp;('/about/', 'About', 'octicon octicon-repo')&nbsp;&nbsp;|&nbsp;&nbsp;('/commit-logs', 'Commit Logs', 'bf bf-blender')&nbsp;&nbsp;|&nbsp;&nbsp;('/archive/', 'Archive', 'octicon octicon-file-zip') -->
+									<li>
+										<span class="mdl-custom">
+											<a href="/commit-logs">
+												<i class="bf bf-blender"></i> Commit Logs
+											</a>
+										</span>
+									</li>
+								<!-- ('/', 'Home', 'octicon octicon-home')&nbsp;&nbsp;|&nbsp;&nbsp;('/about/', 'About', 'octicon octicon-repo')&nbsp;&nbsp;|&nbsp;&nbsp;('/commit-logs', 'Commit Logs', 'bf bf-blender')&nbsp;&nbsp;|&nbsp;&nbsp;('/archive/', 'Archive', 'octicon octicon-file-zip') -->
+									<li>
+										<span class="mdl-custom">
+											<a href="/archive/">
+												<i class="octicon octicon-file-zip"></i> Archive
+											</a>
+										</span>
+									</li>
+								<!-- ('/', 'Home', 'octicon octicon-home')&nbsp;&nbsp;|&nbsp;&nbsp;('/about/', 'About', 'octicon octicon-repo')&nbsp;&nbsp;|&nbsp;&nbsp;('/commit-logs', 'Commit Logs', 'bf bf-blender')&nbsp;&nbsp;|&nbsp;&nbsp;('/archive/', 'Archive', 'octicon octicon-file-zip') -->
+							</ul>
+						</div>
+
 
 					<div id="social">
 						<div id="fa-envelope" class="mdl-icon">
-							<div class="mdl-tooltip" for="fa-envelope">Email (aditia@pawitra.id)</div>
+							<div class="mdl-tooltip mdl-tooltip--top" for="fa-envelope">Email (aditia@pawitra.id)</div>
 							<a href="mailto:aditia@pawitra.id" class="icon fa fa-envelope"></a>
 						</div>
 						<div id="fa-twitter" class="mdl-icon">
-							<div class="mdl-tooltip" for="fa-twitter">Twitter</div>
+							<div class="mdl-tooltip mdl-tooltip--top" for="fa-twitter">Twitter</div>
 							<a href="http://twitter.com/aditia_ap" class="icon fa fa-twitter"></a>
 						</div>
 						<div id="fa-github" class="mdl-icon">
-							<div class="mdl-tooltip" for="fa-github">GitHub</div>
+							<div class="mdl-tooltip mdl-tooltip--top" for="fa-github">GitHub</div>
 							<a href="http://github.com/aditiapratama" class="icon fa fa-github"></a>
 						</div>
 						<div id="fa-rss" class="mdl-icon">
-							<div class="mdl-tooltip" for="fa-rss">Atom Feed</div>
+							<div class="mdl-tooltip mdl-tooltip--top" for="fa-rss">Atom Feed</div>
 							<a href="/atom.xml" class="icon fa fa-rss"></a>
 						</div>
 						<div id="bf-network" class="mdl-icon">
-							<div class="mdl-tooltip" for="bf-network">Blender Network</div>
+							<div class="mdl-tooltip mdl-tooltip--top" for="bf-network">Blender Network</div>
 							<a href="https://www.blendernetwork.org/aditia-pratama" class="icon bf-network"></a>
 						</div>
-					</div>
-
-
-					<div id="sidebar-links">
-							<a href="/commit-logs/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="bf-blender"></i> Commit Logs</button></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/about/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/archive/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Archive</button></a>
 					</div>
 
 					<hr id="sidebar-divider">
@@ -116,16 +148,42 @@
 		</div>
 
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-			<div class="mdl-layout__header">
+			<div class="mdl-layout__header mdl-layout__header">
 				<div class="mdl-layout__header-row">
 					<!-- <div class="mdl-layout-spacer"></div> -->
 					<div id="menu-toggle">
-						<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="toggle-sidebar">
-  						<input type="checkbox" id="toggle-sidebar" class="mdl-switch__input">
-  							<span class="mdl-switch__label"></span>
-						</label>
+						<button id="toggle-sidebar" class="mdl-button mdl-js-button mdl-button--icon">
+  						<i class="material-icons">menu</i>
+						</button>
 					</div>
 					<div class="mdl-layout-spacer"></div>
+					<div class="right-menu">
+						<button id="menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+  						<i class="material-icons">more_vert</i>
+						</button>
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-right">
+								<li class="mdl-menu__item">
+									<a href="/">
+										<i class="octicon octicon-home"></i> Home
+									</a>
+								</li>
+								<li class="mdl-menu__item">
+									<a href="/about/">
+										<i class="octicon octicon-repo"></i> About
+									</a>
+								</li>
+								<li class="mdl-menu__item">
+									<a href="/commit-logs">
+										<i class="bf bf-blender"></i> Commit Logs
+									</a>
+								</li>
+								<li class="mdl-menu__item">
+									<a href="/archive/">
+										<i class="octicon octicon-file-zip"></i> Archive
+									</a>
+								</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
@@ -137,10 +195,14 @@
 								<article>
 	<h1 class="title"><a href="/commit-logs/" title="Commit Logs">Commit&nbsp;Logs</a></h1>
 	<div class="content">
-		<hr />
-<h2><i class="bf-blender"></i> <span class="caps">BLENDER</span> - <code>current branch : master</code></h2>
-<h3>- Compiled : <time class="timeago" datetime="Sat Jul 23 22:47:33 UTC 2016"><em>Sat Jul 23 22:47:33 <span class="caps">UTC</span> 2016</em></time></h3>
-<hr />
+		<h2 style="border-bottom: 3px solid #cfd8dc; padding-bottom:15px;">
+  <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
+  <i style="text-transform:uppercase;color:#c7254e">master</i>
+  <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
+    <time class="timeago" datetime="Mon, 25 Jul 2016 08:42:59 +0700">Mon, 25 Jul 2016 08:42:59 +0700</time>
+  </span>
+</h2>
+
 <table>
 <thead>
 <tr>
@@ -150,6 +212,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rBf23fecf"><code>f23fecf</code></a></td>
+<td>Fix use of uninitialized variable in recent <span class="caps">SSS</span> fix.</td>
+</tr>
+<tr>
+<td>Kévin Dietrich</td>
+<td><a href="https://developer.blender.org/rBf283aa6"><code>f283aa6</code></a></td>
+<td>Fix T48397: Can not bake tweaked <span class="caps">NLA</span></td>
+</tr>
+<tr>
+<td>Kévin Dietrich</td>
+<td><a href="https://developer.blender.org/rBe4efa16"><code>e4efa16</code></a></td>
+<td>Fix T48663: The Soft Light blend type layer make the color darker in the 3D view</td>
+</tr>
 <tr>
 <td>Jörg Müller</td>
 <td><a href="https://developer.blender.org/rB4cbefde"><code>4cbefde</code></a></td>
@@ -234,21 +311,6 @@
 <td>Mike Erwin</td>
 <td><a href="https://developer.blender.org/rB2b77b1c"><code>2b77b1c</code></a></td>
 <td>remove double-checked conditions</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rBbd52875"><code>bd52875</code></a></td>
-<td>Add Subdivide Edge-Ring to menu</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rB192df29"><code>192df29</code></a></td>
-<td>Fix T48926: Subdivide edge-ring crash</td>
-</tr>
-<tr>
-<td>Mike Erwin</td>
-<td><a href="https://developer.blender.org/rB08e1bba"><code>08e1bba</code></a></td>
-<td>fix confusing operator precedence</td>
 </tr>
 </tbody>
 </table>
