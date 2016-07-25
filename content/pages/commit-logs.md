@@ -4,12 +4,15 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Sun, 24 Jul 2016 07:18:10 +0700">Sun, 24 Jul 2016 07:18:10 +0700</time>
+    <time class="timeago" datetime="Mon, 25 Jul 2016 08:42:59 +0700">Mon, 25 Jul 2016 08:42:59 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
+Brecht Van Lommel | [`f23fecf`](https://developer.blender.org/rBf23fecf) | Fix use of uninitialized variable in recent SSS fix.
+Kévin Dietrich | [`f283aa6`](https://developer.blender.org/rBf283aa6) | Fix T48397: Can not bake tweaked NLA
+Kévin Dietrich | [`e4efa16`](https://developer.blender.org/rBe4efa16) | Fix T48663: The Soft Light blend type layer make the color darker in the 3D view
 Jörg Müller | [`4cbefde`](https://developer.blender.org/rB4cbefde) | Audaspace: fix incorrect parameter check in python API.
 Campbell Barton | [`8001854`](https://developer.blender.org/rB8001854) | Cleanup: style
 Campbell Barton | [`6ef37fa`](https://developer.blender.org/rB6ef37fa) | Cleanup: warning
@@ -27,6 +30,3 @@ Sergey Sharybin | [`adf97ed`](https://developer.blender.org/rBadf97ed) | OpenSub
 Campbell Barton | [`e803786`](https://developer.blender.org/rBe803786) | Correct mistake comparing vertices
 Mike Erwin | [`a7e742f`](https://developer.blender.org/rBa7e742f) | use bool consistently, fix redundant conditional
 Mike Erwin | [`2b77b1c`](https://developer.blender.org/rB2b77b1c) | remove double-checked conditions
-Campbell Barton | [`bd52875`](https://developer.blender.org/rBbd52875) | Add Subdivide Edge-Ring to menu
-Campbell Barton | [`192df29`](https://developer.blender.org/rB192df29) | Fix T48926: Subdivide edge-ring crash
-Mike Erwin | [`08e1bba`](https://developer.blender.org/rB08e1bba) | fix confusing operator precedence
