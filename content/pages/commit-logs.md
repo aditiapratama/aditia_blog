@@ -4,12 +4,16 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Mon, 25 Jul 2016 08:42:59 +0700">Mon, 25 Jul 2016 08:42:59 +0700</time>
+    <time class="timeago" datetime="Mon, 25 Jul 2016 13:07:03 +0700">Mon, 25 Jul 2016 13:07:03 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
+Campbell Barton | [`f4cb6d4`](https://developer.blender.org/rBf4cb6d4) | Error in curve update, uninitialized var use
+Campbell Barton | [`2aa5e44`](https://developer.blender.org/rB2aa5e44) | Curve Drawing: Use cyclic for stroke with near start/end points
+Campbell Barton | [`a323d8e`](https://developer.blender.org/rBa323d8e) | Curve Drawing: Add option to use new refit method
+Campbell Barton | [`2418dae`](https://developer.blender.org/rB2418dae) | Curve Fitting: Add alternate 'refit' method
 Brecht Van Lommel | [`f23fecf`](https://developer.blender.org/rBf23fecf) | Fix use of uninitialized variable in recent SSS fix.
 Kévin Dietrich | [`f283aa6`](https://developer.blender.org/rBf283aa6) | Fix T48397: Can not bake tweaked NLA
 Kévin Dietrich | [`e4efa16`](https://developer.blender.org/rBe4efa16) | Fix T48663: The Soft Light blend type layer make the color darker in the 3D view
@@ -26,7 +30,3 @@ Sergey Sharybin | [`ccd51bb`](https://developer.blender.org/rBccd51bb) | OpenSub
 Sergey Sharybin | [`48c4b70`](https://developer.blender.org/rB48c4b70) | OpenSubdiv: Lay down fundamentals to support multiple UV maps
 Sergey Sharybin | [`98970f7`](https://developer.blender.org/rB98970f7) | OpenSubdiv: Get number of UVs from topology refiner
 Sergey Sharybin | [`177c4af`](https://developer.blender.org/rB177c4af) | OpenSubdiv: Cleanup, please don't use insanely long lines
-Sergey Sharybin | [`adf97ed`](https://developer.blender.org/rBadf97ed) | OpenSubdiv: Cleanup, don't use camel case for variable names
-Campbell Barton | [`e803786`](https://developer.blender.org/rBe803786) | Correct mistake comparing vertices
-Mike Erwin | [`a7e742f`](https://developer.blender.org/rBa7e742f) | use bool consistently, fix redundant conditional
-Mike Erwin | [`2b77b1c`](https://developer.blender.org/rB2b77b1c) | remove double-checked conditions
