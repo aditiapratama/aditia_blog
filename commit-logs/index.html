@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - BRANCH : master Compiled : Mon, 25 Jul 2016 13:07:03 +0700 AUTHOR HASH MESSAGE Campbell Barton f4cb6d4 Error in curve update, uninitialized var use Campbell Barton 2aa5e44 Curve Drawing: Use cyclic for stroke with near start/end points Campbell Barton a323d8e ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Tue, 26 Jul 2016 06:39:16 +0700 AUTHOR HASH MESSAGE Campbell Barton eececb0 Curve Drawing: use more closely spaced samples Campbell Barton 4da8543 Resolve undefined M_PI w/ MSVC2013 Campbell Barton 6e131ce Call to python3 for stand-alone scripts ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Mon, 25 Jul 2016 13:07:03 +0700 AUTHOR HASH MESSAGE Campbell Barton f4cb6d4 Error in curve update, uninitialized var use Campbell Barton 2aa5e44 Curve Drawing: Use cyclic for stroke with near start/end points Campbell Barton a323d8e ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Tue, 26 Jul 2016 06:39:16 +0700 AUTHOR HASH MESSAGE Campbell Barton eececb0 Curve Drawing: use more closely spaced samples Campbell Barton 4da8543 Resolve undefined M_PI w/ MSVC2013 Campbell Barton 6e131ce Call to python3 for stand-alone scripts ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -199,7 +199,7 @@
   <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Mon, 25 Jul 2016 13:07:03 +0700">Mon, 25 Jul 2016 13:07:03 +0700</time>
+    <time class="timeago" datetime="Tue, 26 Jul 2016 06:39:16 +0700">Tue, 26 Jul 2016 06:39:16 +0700</time>
   </span>
 </h2>
 
@@ -212,6 +212,71 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Campbell Barton</td>
+<td><a href="https://developer.blender.org/rBeececb0"><code>eececb0</code></a></td>
+<td>Curve Drawing: use more closely spaced samples</td>
+</tr>
+<tr>
+<td>Campbell Barton</td>
+<td><a href="https://developer.blender.org/rB4da8543"><code>4da8543</code></a></td>
+<td>Resolve undefined M_PI w/ <span class="caps">MSVC2013</span></td>
+</tr>
+<tr>
+<td>Campbell Barton</td>
+<td><a href="https://developer.blender.org/rB6e131ce"><code>6e131ce</code></a></td>
+<td>Call to python3 for stand-alone scripts</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB1ea410c"><code>1ea410c</code></a></td>
+<td>OpenSubdiv: Fix opensubdiv option obscuring the interface</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB1870e16"><code>1870e16</code></a></td>
+<td>Cleanup: factorize the &#8216;ensure local&#8217; part of datablock copy into a single BKE_id_copy_ensure_local function.</td>
+</tr>
+<tr>
+<td>Lukas Stockner</td>
+<td><a href="https://developer.blender.org/rBd9cc3ea"><code>d9cc3ea</code></a></td>
+<td>Cycles: Fix rays parallel to the surface in the triangle refine and MultiGGX code</td>
+</tr>
+<tr>
+<td>Lukas Stockner</td>
+<td><a href="https://developer.blender.org/rB83ae0a0"><code>83ae0a0</code></a></td>
+<td>Cycles: Calculate differentials in the Multiscattering <span class="caps">GGX</span> closures</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB988ec3c"><code>988ec3c</code></a></td>
+<td>OpenSubdiv: Support shadeless shading</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBc967a38"><code>c967a38</code></a></td>
+<td>OpenSubdiv: Fix missing support of flat shading in textured viewport</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB27db7ef"><code>27db7ef</code></a></td>
+<td>OpenSubdiv: Use proper material index</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBe7721f5"><code>e7721f5</code></a></td>
+<td>Cycles: Fix <span class="caps">SSS</span> with spatial splits and motion blur</td>
+</tr>
+<tr>
+<td>Campbell Barton</td>
+<td><a href="https://developer.blender.org/rBa4db868"><code>a4db868</code></a></td>
+<td>Resolve build error on <span class="caps">OSX</span></td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rBbbf6293"><code>bbf6293</code></a></td>
+<td>Cleanup: debug-only variable.</td>
+</tr>
 <tr>
 <td>Campbell Barton</td>
 <td><a href="https://developer.blender.org/rBf4cb6d4"><code>f4cb6d4</code></a></td>
@@ -246,71 +311,6 @@
 <td>Kévin Dietrich</td>
 <td><a href="https://developer.blender.org/rBe4efa16"><code>e4efa16</code></a></td>
 <td>Fix T48663: The Soft Light blend type layer make the color darker in the 3D view</td>
-</tr>
-<tr>
-<td>Jörg Müller</td>
-<td><a href="https://developer.blender.org/rB4cbefde"><code>4cbefde</code></a></td>
-<td>Audaspace: fix incorrect parameter check in python <span class="caps">API</span>.</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rB8001854"><code>8001854</code></a></td>
-<td>Cleanup: style</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rB6ef37fa"><code>6ef37fa</code></a></td>
-<td>Cleanup: warning</td>
-</tr>
-<tr>
-<td>Mike Erwin</td>
-<td><a href="https://developer.blender.org/rBbd11d91"><code>bd11d91</code></a></td>
-<td>fix atan2f input conditional</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB164575a"><code>164575a</code></a></td>
-<td>OpenSubdiv: Properly respect Subdivide UVs option</td>
-</tr>
-<tr>
-<td>Julian Eisel</td>
-<td><a href="https://developer.blender.org/rB7ca4cf2"><code>7ca4cf2</code></a></td>
-<td>Fix crash using <span class="caps">ID</span> remapping on invalid <span class="caps">ID</span> pairs</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB9c63878"><code>9c63878</code></a></td>
-<td>OpenSubdiv: Initial support of <span class="caps">UV</span> maps in material shading mode</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBb2f91d8"><code>b2f91d8</code></a></td>
-<td>OpenSubdiv: Use <span class="caps">BLI</span> module math functions</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB165f710"><code>165f710</code></a></td>
-<td>OpenSubdiv: Make drawing code a bit more flexible for FVar width</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBccd51bb"><code>ccd51bb</code></a></td>
-<td>OpenSubdiv: Properly support active <span class="caps">UV</span> layer in textured view</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB48c4b70"><code>48c4b70</code></a></td>
-<td>OpenSubdiv: Lay down fundamentals to support multiple <span class="caps">UV</span> maps</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB98970f7"><code>98970f7</code></a></td>
-<td>OpenSubdiv: Get number of UVs from topology refiner</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB177c4af"><code>177c4af</code></a></td>
-<td>OpenSubdiv: Cleanup, please don&#8217;t use insanely long lines</td>
 </tr>
 </tbody>
 </table>
