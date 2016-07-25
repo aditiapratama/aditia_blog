@@ -1,8 +1,13 @@
 title: Commit Logs
-***
-## <i class="bf-blender"></i> BLENDER - `current branch : master`
-###  - Compiled : <time class="timeago" datetime="Sat Jul 23 22:47:33 UTC 2016">*Sat Jul 23 22:47:33 UTC 2016*</time>
-***
+
+<h2 style="border-bottom: 3px solid #cfd8dc; padding-bottom:15px;">
+  <i class="bf-blender"></i> BLENDER - BRANCH :
+  <i style="text-transform:uppercase;color:#c7254e">master</i>
+  <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
+    <time class="timeago" datetime="Sun, 24 Jul 2016 07:18:10 +0700">Sun, 24 Jul 2016 07:18:10 +0700</time>
+  </span>
+</h2>
+
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
 Jörg Müller | [`4cbefde`](https://developer.blender.org/rB4cbefde) | Audaspace: fix incorrect parameter check in python API.
