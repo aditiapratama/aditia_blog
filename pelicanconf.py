@@ -19,9 +19,6 @@ SIDEBAR_LINKS = [
             ('/about/', 'About', 'octicon octicon-repo'),
             ('/commit-logs', 'Commit Logs', 'bf bf-blender'),
             ('/archive/', 'Archive', 'octicon octicon-file-zip')
-            # '<a href="/commit-logs/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="bf-blender"></i> Commit Logs</button></a>',
-            # '<a href="/about/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">About</button></a>',
-            # '<a href="/archive/"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Archive</button></a>'
         ]
 
 ICONS_PATH = 'images/icons'
