@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - BRANCH : master Compiled : Tue, 26 Jul 2016 06:39:16 +0700 AUTHOR HASH MESSAGE Campbell Barton eececb0 Curve Drawing: use more closely spaced samples Campbell Barton 4da8543 Resolve undefined M_PI w/ MSVC2013 Campbell Barton 6e131ce Call to python3 for stand-alone scripts ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Wed, 27 Jul 2016 08:38:47 +0700 AUTHOR HASH MESSAGE Julian Eisel 24b8e78 Correct UI names of ID types Julian Eisel 3c59a50 More useful block name for report popup blocks Sergey Sharybin c1fd97f Fix T45936: invalid cycles ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Tue, 26 Jul 2016 06:39:16 +0700 AUTHOR HASH MESSAGE Campbell Barton eececb0 Curve Drawing: use more closely spaced samples Campbell Barton 4da8543 Resolve undefined M_PI w/ MSVC2013 Campbell Barton 6e131ce Call to python3 for stand-alone scripts ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Wed, 27 Jul 2016 08:38:47 +0700 AUTHOR HASH MESSAGE Julian Eisel 24b8e78 Correct UI names of ID types Julian Eisel 3c59a50 More useful block name for report popup blocks Sergey Sharybin c1fd97f Fix T45936: invalid cycles ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -199,7 +199,7 @@
   <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Tue, 26 Jul 2016 06:39:16 +0700">Tue, 26 Jul 2016 06:39:16 +0700</time>
+    <time class="timeago" datetime="Wed, 27 Jul 2016 08:38:47 +0700">Wed, 27 Jul 2016 08:38:47 +0700</time>
   </span>
 </h2>
 
@@ -212,6 +212,56 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rB24b8e78"><code>24b8e78</code></a></td>
+<td>Correct <span class="caps">UI</span> names of <span class="caps">ID</span> types</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rB3c59a50"><code>3c59a50</code></a></td>
+<td>More useful block name for report popup blocks</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBc1fd97f"><code>c1fd97f</code></a></td>
+<td>Fix T45936: invalid cycles motion blur for particle rotation and children.</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rBf3f10e4"><code>f3f10e4</code></a></td>
+<td>Fix T48813: Custom icon is not drawn on header / addons prefs panel.</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBf31f740"><code>f31f740</code></a></td>
+<td>Cycles: Proper fix for buffer overflow in volume intersect all</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB7030794"><code>7030794</code></a></td>
+<td>Cycles: Revert previous fixes to intersect_all functions</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rBb91aea6"><code>b91aea6</code></a></td>
+<td>Fix issues in <span class="caps">ID</span> usages checks - we are not interested in self-usages here.</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB01e3141"><code>01e3141</code></a></td>
+<td>Fix T48902: <span class="caps">MCE</span> Dopesheet does not respect Left Click select</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB711d3a8"><code>711d3a8</code></a></td>
+<td>Depsgraph: Use proper check whether <span class="caps">ID</span> is an object</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB40a0fa8"><code>40a0fa8</code></a></td>
+<td>Depsgraph: Use proper unsigned int bitfield for layers flags</td>
+</tr>
 <tr>
 <td>Campbell Barton</td>
 <td><a href="https://developer.blender.org/rBeececb0"><code>eececb0</code></a></td>
@@ -261,56 +311,6 @@
 <td>Sergey Sharybin</td>
 <td><a href="https://developer.blender.org/rB27db7ef"><code>27db7ef</code></a></td>
 <td>OpenSubdiv: Use proper material index</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBe7721f5"><code>e7721f5</code></a></td>
-<td>Cycles: Fix <span class="caps">SSS</span> with spatial splits and motion blur</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rBa4db868"><code>a4db868</code></a></td>
-<td>Resolve build error on <span class="caps">OSX</span></td>
-</tr>
-<tr>
-<td>Bastien Montagne</td>
-<td><a href="https://developer.blender.org/rBbbf6293"><code>bbf6293</code></a></td>
-<td>Cleanup: debug-only variable.</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rBf4cb6d4"><code>f4cb6d4</code></a></td>
-<td>Error in curve update, uninitialized var use</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rB2aa5e44"><code>2aa5e44</code></a></td>
-<td>Curve Drawing: Use cyclic for stroke with near start/end points</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rBa323d8e"><code>a323d8e</code></a></td>
-<td>Curve Drawing: Add option to use new refit method</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rB2418dae"><code>2418dae</code></a></td>
-<td>Curve Fitting: Add alternate &#8216;refit&#8217; method</td>
-</tr>
-<tr>
-<td>Brecht Van Lommel</td>
-<td><a href="https://developer.blender.org/rBf23fecf"><code>f23fecf</code></a></td>
-<td>Fix use of uninitialized variable in recent <span class="caps">SSS</span> fix.</td>
-</tr>
-<tr>
-<td>Kévin Dietrich</td>
-<td><a href="https://developer.blender.org/rBf283aa6"><code>f283aa6</code></a></td>
-<td>Fix T48397: Can not bake tweaked <span class="caps">NLA</span></td>
-</tr>
-<tr>
-<td>Kévin Dietrich</td>
-<td><a href="https://developer.blender.org/rBe4efa16"><code>e4efa16</code></a></td>
-<td>Fix T48663: The Soft Light blend type layer make the color darker in the 3D view</td>
 </tr>
 </tbody>
 </table>
