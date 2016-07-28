@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - BRANCH : master Compiled : Wed, 27 Jul 2016 08:38:47 +0700 AUTHOR HASH MESSAGE Julian Eisel 24b8e78 Correct UI names of ID types Julian Eisel 3c59a50 More useful block name for report popup blocks Sergey Sharybin c1fd97f Fix T45936: invalid cycles ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Thu, 28 Jul 2016 11:46:17 +0700 AUTHOR HASH MESSAGE Campbell Barton d60acd0 Fix crash fitting single point curve Mitchell Stokes 3a4c307 Use COMPAT_ENGINES instead of RenderEngine.use_game_engine for panel poll methods Campbell Barton a27acef Fix T48951 ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Wed, 27 Jul 2016 08:38:47 +0700 AUTHOR HASH MESSAGE Julian Eisel 24b8e78 Correct UI names of ID types Julian Eisel 3c59a50 More useful block name for report popup blocks Sergey Sharybin c1fd97f Fix T45936: invalid cycles ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Thu, 28 Jul 2016 11:46:17 +0700 AUTHOR HASH MESSAGE Campbell Barton d60acd0 Fix crash fitting single point curve Mitchell Stokes 3a4c307 Use COMPAT_ENGINES instead of RenderEngine.use_game_engine for panel poll methods Campbell Barton a27acef Fix T48951 ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -199,7 +199,7 @@
   <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Wed, 27 Jul 2016 08:38:47 +0700">Wed, 27 Jul 2016 08:38:47 +0700</time>
+    <time class="timeago" datetime="Thu, 28 Jul 2016 11:46:17 +0700">Thu, 28 Jul 2016 11:46:17 +0700</time>
   </span>
 </h2>
 
@@ -212,6 +212,86 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Campbell Barton</td>
+<td><a href="https://developer.blender.org/rBd60acd0"><code>d60acd0</code></a></td>
+<td>Fix crash fitting single point curve</td>
+</tr>
+<tr>
+<td>Mitchell Stokes</td>
+<td><a href="https://developer.blender.org/rB3a4c307"><code>3a4c307</code></a></td>
+<td>Use COMPAT_ENGINES instead of RenderEngine.use_game_engine for panel poll methods</td>
+</tr>
+<tr>
+<td>Campbell Barton</td>
+<td><a href="https://developer.blender.org/rBa27acef"><code>a27acef</code></a></td>
+<td>Fix T48951: Crash refreshing some popups</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rB8f16181"><code>8f16181</code></a></td>
+<td>Add comments on behavior of spacedata and regionbase lists</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rBc59b21f"><code>c59b21f</code></a></td>
+<td>Fix own mistake from c05363e8895</td>
+</tr>
+<tr>
+<td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rBb645e70"><code>b645e70</code></a></td>
+<td>Fix T48790: Cycles render bug with zero strength lights.</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rBc05363e"><code>c05363e</code></a></td>
+<td>Fix crash closing Blender while in rendered local view</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rB4559229"><code>4559229</code></a></td>
+<td>Fix memory leak when closing Blender with operator popup open</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBe4646c5"><code>e4646c5</code></a></td>
+<td>Fix T48946: Blender+Tahiti+<span class="caps">DRI3</span>+Unity+Linux <span class="caps">GUI</span> corruption/not rendering</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB25bd01f"><code>25bd01f</code></a></td>
+<td>Avoid creating multiple outputs connected to the same socket when creating a node group</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBd7bd64d"><code>d7bd64d</code></a></td>
+<td>Fix T48061: Crash with adaptive domain and cases when there&#8217;s no smoke</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBae881dd"><code>ae881dd</code></a></td>
+<td>Fix T48760: Changing Renderlayer Compositor node Layer does not update enabled outputs until script is finished</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB2e38c07"><code>2e38c07</code></a></td>
+<td>Cycles: Style, placement of asteric in pointers</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB1838748"><code>1838748</code></a></td>
+<td>Cycles: Some minor tweaks to emission sharder</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB5f95ffe"><code>5f95ffe</code></a></td>
+<td>Fix T48829: Memory leak on Blender Exit</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB3d8c2e2"><code>3d8c2e2</code></a></td>
+<td>Fix T48950: Movie Clip mode segfaults</td>
+</tr>
 <tr>
 <td>Julian Eisel</td>
 <td><a href="https://developer.blender.org/rB24b8e78"><code>24b8e78</code></a></td>
@@ -231,86 +311,6 @@
 <td>Bastien Montagne</td>
 <td><a href="https://developer.blender.org/rBf3f10e4"><code>f3f10e4</code></a></td>
 <td>Fix T48813: Custom icon is not drawn on header / addons prefs panel.</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBf31f740"><code>f31f740</code></a></td>
-<td>Cycles: Proper fix for buffer overflow in volume intersect all</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB7030794"><code>7030794</code></a></td>
-<td>Cycles: Revert previous fixes to intersect_all functions</td>
-</tr>
-<tr>
-<td>Bastien Montagne</td>
-<td><a href="https://developer.blender.org/rBb91aea6"><code>b91aea6</code></a></td>
-<td>Fix issues in <span class="caps">ID</span> usages checks - we are not interested in self-usages here.</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB01e3141"><code>01e3141</code></a></td>
-<td>Fix T48902: <span class="caps">MCE</span> Dopesheet does not respect Left Click select</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB711d3a8"><code>711d3a8</code></a></td>
-<td>Depsgraph: Use proper check whether <span class="caps">ID</span> is an object</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB40a0fa8"><code>40a0fa8</code></a></td>
-<td>Depsgraph: Use proper unsigned int bitfield for layers flags</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rBeececb0"><code>eececb0</code></a></td>
-<td>Curve Drawing: use more closely spaced samples</td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rB4da8543"><code>4da8543</code></a></td>
-<td>Resolve undefined M_PI w/ <span class="caps">MSVC2013</span></td>
-</tr>
-<tr>
-<td>Campbell Barton</td>
-<td><a href="https://developer.blender.org/rB6e131ce"><code>6e131ce</code></a></td>
-<td>Call to python3 for stand-alone scripts</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB1ea410c"><code>1ea410c</code></a></td>
-<td>OpenSubdiv: Fix opensubdiv option obscuring the interface</td>
-</tr>
-<tr>
-<td>Bastien Montagne</td>
-<td><a href="https://developer.blender.org/rB1870e16"><code>1870e16</code></a></td>
-<td>Cleanup: factorize the &#8216;ensure local&#8217; part of datablock copy into a single BKE_id_copy_ensure_local function.</td>
-</tr>
-<tr>
-<td>Lukas Stockner</td>
-<td><a href="https://developer.blender.org/rBd9cc3ea"><code>d9cc3ea</code></a></td>
-<td>Cycles: Fix rays parallel to the surface in the triangle refine and MultiGGX code</td>
-</tr>
-<tr>
-<td>Lukas Stockner</td>
-<td><a href="https://developer.blender.org/rB83ae0a0"><code>83ae0a0</code></a></td>
-<td>Cycles: Calculate differentials in the Multiscattering <span class="caps">GGX</span> closures</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB988ec3c"><code>988ec3c</code></a></td>
-<td>OpenSubdiv: Support shadeless shading</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBc967a38"><code>c967a38</code></a></td>
-<td>OpenSubdiv: Fix missing support of flat shading in textured viewport</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB27db7ef"><code>27db7ef</code></a></td>
-<td>OpenSubdiv: Use proper material index</td>
 </tr>
 </tbody>
 </table>
