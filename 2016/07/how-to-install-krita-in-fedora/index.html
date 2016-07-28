@@ -195,46 +195,43 @@
 								<article>
 	<h1 class="title"><a href="/2016/07/how-to-install-krita-in-fedora/" title="Permalink to How to Install Krita in Fedora">How to Install Krita in&nbsp;Fedora</a></h1>
 	<time class="date" datetime="2016-07-14 15:52:24+07:00">
-		Updated <time class="timeago" datetime="2016-07-18 22:26:56+07:00">  </time> |
+		Updated <time class="timeago" datetime="2016-07-28 11:55:11+07:00">  </time> |
 		July 14, 2016
 	</time>
 	<div class="content">
 		<p>In this quick tips, I want to show you how to install Krita in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using <a href="http://appimage.org/">appimage</a> for universal linux&nbsp;distribution.</p>
 <ul>
-<li>First we need to make directory for krita, I prefer in <code>/opt/krita-app/</code>.</li>
+<li>First we need to make directory for krita, I prefer in <code>/opt/krita-app/</code>,</li>
+<li>Now we can download krita appimage from official website <a href="https://krita.org/en/download/krita-desktop/">krita.org</a>,</li>
+<li>After download has finished, we can rename and link the krita appimage to <code>/usr/local</code> or any <code>$PATH</code>, so we can call it&nbsp;directly.</li>
+<li>Below is the script that I use to install&nbsp;Krita.</li>
 </ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># make directory</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># make directory</span>
 sudo mkdir /opt/krita-app/
 
 <span class="c1"># give permission to directory</span>
 sudo chown -R &lt;your-username-here&gt;:nogroup /opt/krita-app/
-</pre></div>
-</td></tr></table>
 
-<ul>
-<li>Now we can download krita appimage from official website <a href="https://krita.org/en/download/krita-desktop/">krita.org</a>, or using below script to download directly to <code>/opt/krita-app/</code></li>
-</ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># download krita</span>
+<span class="c1"># download krita</span>
 wget -c -P /opt/krita-app/ http://files.kde.org/krita/3/linux/krita-3.0-x86_64.appimage
-</pre></div>
-</td></tr></table>
 
-<ul>
-<li>After download has finished, we can rename and link the krita appimage to <code>/usr/local</code> or any <code>$PATH</code>, so we can call it&nbsp;directly.</li>
-</ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># rename krita appimage</span>
+<span class="c1"># rename krita appimage</span>
 mv /opt/krita-app/krita-3.0-x86_64.appimage /opt/krita-app/krita.appimage
 
 <span class="c1"># link to /usr/local/</span>
@@ -286,6 +283,7 @@ X-Krita-Version=30
 </td></tr></table>
 
 <p><em>Hope you find this post&nbsp;useful.</em></p>
+<hr />
 	</div>
 
 	<div id="related-articles">
