@@ -1,27 +1,25 @@
 Title: How to Install Krita in Fedora
 Date: 7/14/2016, 3:52:24 PM
-modified: 7/18/2016, 10:26:56 PM
+modified: 7/28/2016, 11:55:11 AM
 Category: linux, install, apps, krita, tips
 
 In this quick tips, I want to show you how to install Krita in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using [appimage](http://appimage.org/) for universal linux distribution.
 
-- First we need to make directory for krita, I prefer in `/opt/krita-app/`.
+- First we need to make directory for krita, I prefer in `/opt/krita-app/`,
+- Now we can download krita appimage from official website [krita.org](https://krita.org/en/download/krita-desktop/),
+- After download has finished, we can rename and link the krita appimage to `/usr/local` or any `$PATH`, so we can call it directly.
+- Below is the script that I use to install Krita.
+
 ```bash
 # make directory
 sudo mkdir /opt/krita-app/
 
 # give permission to directory
 sudo chown -R <your-username-here>:nogroup /opt/krita-app/
-```
 
--  Now we can download krita appimage from official website [krita.org](https://krita.org/en/download/krita-desktop/), or using below script to download directly to `/opt/krita-app/`
-```bash
 # download krita
 wget -c -P /opt/krita-app/ http://files.kde.org/krita/3/linux/krita-3.0-x86_64.appimage
-```
 
-- After download has finished, we can rename and link the krita appimage to `/usr/local` or any `$PATH`, so we can call it directly.
-```bash
 # rename krita appimage
 mv /opt/krita-app/krita-3.0-x86_64.appimage /opt/krita-app/krita.appimage
 
@@ -34,6 +32,7 @@ sudo chmod +x /usr/local/bin/krita
 
 - After this last step, we can call krita from terminal or create `.desktop` file for it.
 - As additional here's I paste my `.desktop` file in `$HOME/.local/share/applications/krita.desktop`
+
 ```text
 [Desktop Entry]                                                                    
 Name=Krita
@@ -55,3 +54,4 @@ X-Krita-Version=30
 ```
 
 _Hope you find this post useful._
+***
