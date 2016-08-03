@@ -4,29 +4,29 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Wed, 03 Aug 2016 19:43:59 +0700">Wed, 03 Aug 2016 19:43:59 +0700</time>
+    <time class="timeago" datetime="Thu, 04 Aug 2016 06:15:36 +0700">Thu, 04 Aug 2016 06:15:36 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
-Julian Eisel | [`de3181b`](https://developer.blender.org/rBde3181b) | Fix tmp screen becoming permanent after going fullscreen
-Alexander Gavrilov | [`4067ab3`](https://developer.blender.org/rB4067ab3) | Fix T48991: some particles emitted at a distance from object.
-Sergey Sharybin | [`538b302`](https://developer.blender.org/rB538b302) | Audapsace: Make it work with Jack and no libjack-dev package installed
-Sergey Sharybin | [`8e015e3`](https://developer.blender.org/rB8e015e3) | Buildbot: Enable proper Pascal architecture
-Sergey Sharybin | [`b1d0432`](https://developer.blender.org/rBb1d0432) | Fix strict compiler flags with older GCC
-Alexander Gavrilov | [`138362a`](https://developer.blender.org/rB138362a) | Cycles: add unit tests for supported constant folding rules.
-Sergey Sharybin | [`473fc0c`](https://developer.blender.org/rB473fc0c) | Buildbot: Seems quotes are not really needed when passing list
-Sergey Sharybin | [`98b8a68`](https://developer.blender.org/rB98b8a68) | Buildbot: Attempt to enable sm_60 CUDA architecture for build slaves
-Sergey Sharybin | [`6353ecb`](https://developer.blender.org/rB6353ecb) | Cycles: Tweaks to support CUDA 8 toolkit
-Campbell Barton | [`7065022`](https://developer.blender.org/rB7065022) | Fix T48901: Blender ignores xinput cursor matrix
-Campbell Barton | [`a3ce64b`](https://developer.blender.org/rBa3ce64b) | Cleanup: unused vars, imports, pep8
-Campbell Barton | [`83ebec7`](https://developer.blender.org/rB83ebec7) | Replace pep8 with flake8 checker
-Campbell Barton | [`8c74ebb`](https://developer.blender.org/rB8c74ebb) | Support Auto-Clamped Handle for Curve-Mapping
-Bastien Montagne | [`36a7906`](https://developer.blender.org/rB36a7906) | Fix T48980: crash when loading a file that contains a custom node tree.
-Julian Eisel | [`dda2d1d`](https://developer.blender.org/rBdda2d1d) | Correction to 0f2ff52c0866
-Julian Eisel | [`0f2ff52`](https://developer.blender.org/rB0f2ff52) | Enable Undo for "Add background Image"
-Brecht Van Lommel | [`feac208`](https://developer.blender.org/rBfeac208) | Fix mistake in Cycles mix node multiply constant folding.
-Campbell Barton | [`81f4bc1`](https://developer.blender.org/rB81f4bc1) | Cleanup: reduce Vector_getseters size using macros
-Campbell Barton | [`4734781`](https://developer.blender.org/rB4734781) | Correct own error in last commit
-Campbell Barton | [`64d4d6b`](https://developer.blender.org/rB64d4d6b) | Support limiting collisions by group for softbody and particles
+Brecht Van Lommel | [`42f6252`](https://developer.blender.org/rB42f6252) | Fix T47782: popups with wrong size when switching from retina to non-retina on OS X.
+Julian Eisel | [`7830ec5`](https://developer.blender.org/rB7830ec5) | UI: Correct tooltips for properties region toggle OP
+Julian Eisel | [`eaea4ea`](https://developer.blender.org/rBeaea4ea) | Grease Pencil v2 Branch
+Brecht Van Lommel | [`9d4ea84`](https://developer.blender.org/rB9d4ea84) | Fix T48164: messed up interface switching between retina and non-retina display on OS X.
+Julian Eisel | [`980fbb3`](https://developer.blender.org/rB980fbb3) | Boolean modifier UI improvement
+Sergey Sharybin | [`99b1c10`](https://developer.blender.org/rB99b1c10) | Cycles: Recent SSS inline changes broke CPU tests
+Sergey Sharybin | [`285e082`](https://developer.blender.org/rB285e082) | Fix T49010: Portals don't work in recent Blender versions
+Sergey Sharybin | [`960db4c`](https://developer.blender.org/rB960db4c) | Cycles: Revert recent inline changes for CUDA 8 and sm_50+
+Brecht Van Lommel | [`70100b4`](https://developer.blender.org/rB70100b4) | Fix T48283: on OS X, mouse clicks not working properly if application launch takes a long time.
+Julian Eisel | [`75f37fe`](https://developer.blender.org/rB75f37fe) | Viewport: Make lights in local view behave like BI and Cycles
+Mai Lavelle | [`41a4967`](https://developer.blender.org/rB41a4967) | Fix T49003: Cycles volumes have wrong results after recent microdisp commits
+Alexander Gavrilov | [`f593333`](https://developer.blender.org/rBf593333) | Fix T43220, T47551: collider scaling or rotation causes smoke to explode.
+Alexander Gavrilov | [`ae9e970`](https://developer.blender.org/rBae9e970) | Fix T43782: smoke simulation problems with multiple touching colliders.
+Alexander Gavrilov | [`f2d5295`](https://developer.blender.org/rBf2d5295) | Cycles: log how many nodes were deduplicated for use in tests.
+Alexander Gavrilov | [`e54320c`](https://developer.blender.org/rBe54320c) | Cycles: add folding for redundant A to B to A conversions.
+Bastien Montagne | [`2f5db2e`](https://developer.blender.org/rB2f5db2e) | Fix T48986: Incorrect normals or tangents when using custom split normals.
+Sergey Sharybin | [`08ebd72`](https://developer.blender.org/rB08ebd72) | Buildbot: Use annoying hybrid setup of two CUDA toolkits
+Sergey Sharybin | [`500e0e9`](https://developer.blender.org/rB500e0e9) | Cycles: Some more inline policy tweaks for CUDA 8
+Sergey Sharybin | [`b416168`](https://developer.blender.org/rBb416168) | Cycles: Cleanup, trailing whitespace
+Sergey Sharybin | [`7b8b16a`](https://developer.blender.org/rB7b8b16a) | Cycles: Some cleanup in CUDA device file
