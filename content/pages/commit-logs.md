@@ -4,7 +4,7 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Tue, 02 Aug 2016 06:06:07 +0700">Tue, 02 Aug 2016 06:06:07 +0700</time>
+    <time class="timeago" datetime="Wed, 03 Aug 2016 19:43:59 +0700">Wed, 03 Aug 2016 19:43:59 +0700</time>
   </span>
 </h2>
 
