@@ -4,29 +4,29 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Thu, 04 Aug 2016 06:15:36 +0700">Thu, 04 Aug 2016 06:15:36 +0700</time>
+    <time class="timeago" datetime="Sun, 07 Aug 2016 09:19:24 +0700">Sun, 07 Aug 2016 09:19:24 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
-Brecht Van Lommel | [`42f6252`](https://developer.blender.org/rB42f6252) | Fix T47782: popups with wrong size when switching from retina to non-retina on OS X.
-Julian Eisel | [`7830ec5`](https://developer.blender.org/rB7830ec5) | UI: Correct tooltips for properties region toggle OP
-Julian Eisel | [`eaea4ea`](https://developer.blender.org/rBeaea4ea) | Grease Pencil v2 Branch
-Brecht Van Lommel | [`9d4ea84`](https://developer.blender.org/rB9d4ea84) | Fix T48164: messed up interface switching between retina and non-retina display on OS X.
-Julian Eisel | [`980fbb3`](https://developer.blender.org/rB980fbb3) | Boolean modifier UI improvement
-Sergey Sharybin | [`99b1c10`](https://developer.blender.org/rB99b1c10) | Cycles: Recent SSS inline changes broke CPU tests
-Sergey Sharybin | [`285e082`](https://developer.blender.org/rB285e082) | Fix T49010: Portals don't work in recent Blender versions
-Sergey Sharybin | [`960db4c`](https://developer.blender.org/rB960db4c) | Cycles: Revert recent inline changes for CUDA 8 and sm_50+
-Brecht Van Lommel | [`70100b4`](https://developer.blender.org/rB70100b4) | Fix T48283: on OS X, mouse clicks not working properly if application launch takes a long time.
-Julian Eisel | [`75f37fe`](https://developer.blender.org/rB75f37fe) | Viewport: Make lights in local view behave like BI and Cycles
-Mai Lavelle | [`41a4967`](https://developer.blender.org/rB41a4967) | Fix T49003: Cycles volumes have wrong results after recent microdisp commits
-Alexander Gavrilov | [`f593333`](https://developer.blender.org/rBf593333) | Fix T43220, T47551: collider scaling or rotation causes smoke to explode.
-Alexander Gavrilov | [`ae9e970`](https://developer.blender.org/rBae9e970) | Fix T43782: smoke simulation problems with multiple touching colliders.
-Alexander Gavrilov | [`f2d5295`](https://developer.blender.org/rBf2d5295) | Cycles: log how many nodes were deduplicated for use in tests.
-Alexander Gavrilov | [`e54320c`](https://developer.blender.org/rBe54320c) | Cycles: add folding for redundant A to B to A conversions.
-Bastien Montagne | [`2f5db2e`](https://developer.blender.org/rB2f5db2e) | Fix T48986: Incorrect normals or tangents when using custom split normals.
-Sergey Sharybin | [`08ebd72`](https://developer.blender.org/rB08ebd72) | Buildbot: Use annoying hybrid setup of two CUDA toolkits
-Sergey Sharybin | [`500e0e9`](https://developer.blender.org/rB500e0e9) | Cycles: Some more inline policy tweaks for CUDA 8
-Sergey Sharybin | [`b416168`](https://developer.blender.org/rBb416168) | Cycles: Cleanup, trailing whitespace
-Sergey Sharybin | [`7b8b16a`](https://developer.blender.org/rB7b8b16a) | Cycles: Some cleanup in CUDA device file
+Bastien Montagne | [`566dd4e`](https://developer.blender.org/rB566dd4e) | Cleanup: add missing ID types to BKE_library_idtype_can_use_idtype().
+Kévin Dietrich | [`b4cd289`](https://developer.blender.org/rBb4cd289) | Fix T49028: crash when copying a scene without grease pencil data.
+Bastien Montagne | [`28c3bdf`](https://developer.blender.org/rB28c3bdf) | Cleanup: better not split UI strings when possible...
+Bastien Montagne | [`604302a`](https://developer.blender.org/rB604302a) | Cleanup some new gpencil rna functions names.
+Kévin Dietrich | [`61050f7`](https://developer.blender.org/rB61050f7) | Basic Alembic support
+Alexander Gavrilov | [`4158737`](https://developer.blender.org/rB4158737) | Add the collision group option to the UI for boid particle physics.
+Alexander Gavrilov | [`277b1d7`](https://developer.blender.org/rB277b1d7) | Fix T26658: particles stopped or bounced by 100% permeability colliders.
+Julian Eisel | [`b988309`](https://developer.blender.org/rBb988309) | Fix wrong property type usage
+Mai Lavelle | [`cd809b9`](https://developer.blender.org/rBcd809b9) | Cycles: Add AttributeDescriptor
+Brecht Van Lommel | [`734e0ac`](https://developer.blender.org/rB734e0ac) | Fix for Cycles particle motion blur hiding fix.
+Bastien Montagne | [`df7be61`](https://developer.blender.org/rBdf7be61) | Fix T49023: Segfault when switching brushes while renaming another brush.
+Joshua Leung | [`8adcd93`](https://developer.blender.org/rB8adcd93) | GPencil: Tweaks to layout to try and get the spacing a bit nicer
+Joshua Leung | [`3971c83`](https://developer.blender.org/rB3971c83) | GPencil: Various UI name fixes
+Joshua Leung | [`83ee537`](https://developer.blender.org/rB83ee537) | GPencil: Added Ctrl-J hotkey for Joining strokes
+Joshua Leung | [`d4bdb99`](https://developer.blender.org/rBd4bdb99) | GPencil: "Join Strokes" tool doesn't leave gaps by default now
+Bastien Montagne | [`50c017b`](https://developer.blender.org/rB50c017b) | Fix T49022: Crash in BKE_libblock_remap_locked.
+Bastien Montagne | [`b7bf9ed`](https://developer.blender.org/rBb7bf9ed) | Cleanup: add missing entries to library_query.c ID types switch case.
+Tamito Kajiyama | [`a2a7316`](https://developer.blender.org/rBa2a7316) | Fix T48366: Freestyle will unnecessary exclude some linked objects.
+Tamito Kajiyama | [`bed32bf`](https://developer.blender.org/rBbed32bf) | Freestyle: minor code cleanup (whites pace).
+Bastien Montagne | [`a0e72a0`](https://developer.blender.org/rBa0e72a0) | Fix T49014: Append does not work in some cases.
