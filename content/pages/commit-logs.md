@@ -4,29 +4,29 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Sun, 07 Aug 2016 09:19:24 +0700">Sun, 07 Aug 2016 09:19:24 +0700</time>
+    <time class="timeago" datetime="Thu, 11 Aug 2016 05:13:10 +0700">Thu, 11 Aug 2016 05:13:10 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
-Bastien Montagne | [`566dd4e`](https://developer.blender.org/rB566dd4e) | Cleanup: add missing ID types to BKE_library_idtype_can_use_idtype().
-Kévin Dietrich | [`b4cd289`](https://developer.blender.org/rBb4cd289) | Fix T49028: crash when copying a scene without grease pencil data.
-Bastien Montagne | [`28c3bdf`](https://developer.blender.org/rB28c3bdf) | Cleanup: better not split UI strings when possible...
-Bastien Montagne | [`604302a`](https://developer.blender.org/rB604302a) | Cleanup some new gpencil rna functions names.
-Kévin Dietrich | [`61050f7`](https://developer.blender.org/rB61050f7) | Basic Alembic support
-Alexander Gavrilov | [`4158737`](https://developer.blender.org/rB4158737) | Add the collision group option to the UI for boid particle physics.
-Alexander Gavrilov | [`277b1d7`](https://developer.blender.org/rB277b1d7) | Fix T26658: particles stopped or bounced by 100% permeability colliders.
-Julian Eisel | [`b988309`](https://developer.blender.org/rBb988309) | Fix wrong property type usage
-Mai Lavelle | [`cd809b9`](https://developer.blender.org/rBcd809b9) | Cycles: Add AttributeDescriptor
-Brecht Van Lommel | [`734e0ac`](https://developer.blender.org/rB734e0ac) | Fix for Cycles particle motion blur hiding fix.
-Bastien Montagne | [`df7be61`](https://developer.blender.org/rBdf7be61) | Fix T49023: Segfault when switching brushes while renaming another brush.
-Joshua Leung | [`8adcd93`](https://developer.blender.org/rB8adcd93) | GPencil: Tweaks to layout to try and get the spacing a bit nicer
-Joshua Leung | [`3971c83`](https://developer.blender.org/rB3971c83) | GPencil: Various UI name fixes
-Joshua Leung | [`83ee537`](https://developer.blender.org/rB83ee537) | GPencil: Added Ctrl-J hotkey for Joining strokes
-Joshua Leung | [`d4bdb99`](https://developer.blender.org/rBd4bdb99) | GPencil: "Join Strokes" tool doesn't leave gaps by default now
-Bastien Montagne | [`50c017b`](https://developer.blender.org/rB50c017b) | Fix T49022: Crash in BKE_libblock_remap_locked.
-Bastien Montagne | [`b7bf9ed`](https://developer.blender.org/rBb7bf9ed) | Cleanup: add missing entries to library_query.c ID types switch case.
-Tamito Kajiyama | [`a2a7316`](https://developer.blender.org/rBa2a7316) | Fix T48366: Freestyle will unnecessary exclude some linked objects.
-Tamito Kajiyama | [`bed32bf`](https://developer.blender.org/rBbed32bf) | Freestyle: minor code cleanup (whites pace).
-Bastien Montagne | [`a0e72a0`](https://developer.blender.org/rBa0e72a0) | Fix T49014: Append does not work in some cases.
+Lukas Stockner | [`7c3a06c`](https://developer.blender.org/rB7c3a06c) | Cycles Tests: Add test for correct 16 byte alignment of KernelData structs
+Mai Lavelle | [`4d1bf14`](https://developer.blender.org/rB4d1bf14) | Cycles Standalone: Fix building after microdisp changes
+Lukas Stockner | [`82e65ab`](https://developer.blender.org/rB82e65ab) | Cycles: Fix KernelIntegrator padding to 16-byte boundary
+Bastien Montagne | [`498b7bd7`](https://developer.blender.org/rB498b7bd7) | Updated install_deps.sh to OSD 3.0.5 (and switch from git repo to download archive of sources).
+Lukas Stockner | [`ef27d8e`](https://developer.blender.org/rBef27d8e) | Cycles Standalone: Add option to set the tile size from the command line
+Lukas Stockner | [`bbbc079`](https://developer.blender.org/rBbbbc079) | Cycles: Correct maximum number of textures on pre-Kepler CUDA cards
+Antonioya | [`ebdb549`](https://developer.blender.org/rBebdb549) | GPencil: Avoid segment fault if new stroke function is called without colorname
+Antonioya | [`774beb7`](https://developer.blender.org/rB774beb7) | GPencil: Rename color name property to keep consistency in naming
+Bastien Montagne | [`c19d527`](https://developer.blender.org/rBc19d527) | Fix crash in id remapping of Graph editor.
+Sergey Sharybin | [`0433ae3`](https://developer.blender.org/rB0433ae3) | Cycles: Use proper property getter
+Sergey Sharybin | [`0271952`](https://developer.blender.org/rB0271952) | Attempt to fix previous commit for non-c++11 builds
+Lukas Tönne | [`3bbf8fb`](https://developer.blender.org/rB3bbf8fb) | Fix for isfinite breaking builds when WITH_CXX11 is enabled.
+Sergey Sharybin | [`d5a0ae0`](https://developer.blender.org/rBd5a0ae0) | Fix T48916: Proxy Custom File is broken
+Sergey Sharybin | [`1647d89`](https://developer.blender.org/rB1647d89) | Fix T49027: Sequence uses too much memory when rendering scene with lots of movie strips
+Sergey Sharybin | [`f990518`](https://developer.blender.org/rBf990518) | CMake: Once again, don't use find_package to get hardcoded libraries
+Sergey Sharybin | [`62b6706`](https://developer.blender.org/rB62b6706) | CMake: Remove hardcoded DIR_ROOT for alembic and MinGW
+Sergey Sharybin | [`f0bf33f`](https://developer.blender.org/rBf0bf33f) | CMake: Use proper way to define debug/release libraries for alembic
+Sergey Sharybin | [`bccaa994`](https://developer.blender.org/rBbccaa994) | CMake: Do not force set root folder for Alembic
+Alexander Gavrilov | [`a7f6f90`](https://developer.blender.org/rBa7f6f90) | Cycles: avoid making NaNs in Vector Math node by normalizing zero vectors.
+Thomas Dinges | [`c2a7317`](https://developer.blender.org/rBc2a7317) | CUDA: We don't support Toolkits < 7.5, update error message.
