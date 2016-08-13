@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - BRANCH : master Compiled : Thu, 11 Aug 2016 05:13:10 +0700 AUTHOR HASH MESSAGE Lukas Stockner 7c3a06c Cycles Tests: Add test for correct 16 byte alignment of KernelData structs Mai Lavelle 4d1bf14 Cycles Standalone: Fix building after microdisp changes Lukas Stockner ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Sat, 13 Aug 2016 22:19:51 +0700 AUTHOR HASH MESSAGE Antonioya 35a6e54 GPencil: Cleanup code Lukas Tönne c395d04 Fix T49082: Intermediate update call when making links can change group socket layout. Julian Eisel fcb78f2 Add DNA_struct_find (useful ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Thu, 11 Aug 2016 05:13:10 +0700 AUTHOR HASH MESSAGE Lukas Stockner 7c3a06c Cycles Tests: Add test for correct 16 byte alignment of KernelData structs Mai Lavelle 4d1bf14 Cycles Standalone: Fix building after microdisp changes Lukas Stockner ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Sat, 13 Aug 2016 22:19:51 +0700 AUTHOR HASH MESSAGE Antonioya 35a6e54 GPencil: Cleanup code Lukas Tönne c395d04 Fix T49082: Intermediate update call when making links can change group socket layout. Julian Eisel fcb78f2 Add DNA_struct_find (useful ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -199,7 +199,7 @@
   <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Thu, 11 Aug 2016 05:13:10 +0700">Thu, 11 Aug 2016 05:13:10 +0700</time>
+    <time class="timeago" datetime="Sat, 13 Aug 2016 22:19:51 +0700">Sat, 13 Aug 2016 22:19:51 +0700</time>
   </span>
 </h2>
 
@@ -212,6 +212,81 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Antonioya</td>
+<td><a href="https://developer.blender.org/rB35a6e54"><code>35a6e54</code></a></td>
+<td>GPencil: Cleanup code</td>
+</tr>
+<tr>
+<td>Lukas Tönne</td>
+<td><a href="https://developer.blender.org/rBc395d04"><code>c395d04</code></a></td>
+<td>Fix T49082: Intermediate update call when making links can change group socket layout.</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rBfcb78f2"><code>fcb78f2</code></a></td>
+<td>Add DNA_struct_find (useful for version patching)</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rB25872ca"><code>25872ca</code></a></td>
+<td>Fix error in GPencil V2 version patching</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB04c7d9d"><code>04c7d9d</code></a></td>
+<td>Depsgraph: tag relations for update when aterial slots changes</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB82268fa"><code>82268fa</code></a></td>
+<td>Depsgraph: Tag relations for update when making datablocks single user</td>
+</tr>
+<tr>
+<td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rBbac1279"><code>bac1279</code></a></td>
+<td>Fix T49045: splash not working correctly on <span class="caps">OS</span> X, after recent bugfix.</td>
+</tr>
+<tr>
+<td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rBf3bff6a"><code>f3bff6a</code></a></td>
+<td>Fix T49071: Cycles <span class="caps">OSL</span> build problem with oslc compilers that can&#8217;t find their own stdosl.h.</td>
+</tr>
+<tr>
+<td>Thomas Dinges</td>
+<td><a href="https://developer.blender.org/rB9d236ac"><code>9d236ac</code></a></td>
+<td>Cycles: Enable half float support (4 channels and 1 channel) on <span class="caps">CUDA</span>.</td>
+</tr>
+<tr>
+<td>Thomas Dinges</td>
+<td><a href="https://developer.blender.org/rB5ac7ef8"><code>5ac7ef8</code></a></td>
+<td>Cycles: Change code order for Image Data Types.</td>
+</tr>
+<tr>
+<td>Mai Lavelle</td>
+<td><a href="https://developer.blender.org/rB3aed54d"><code>3aed54d</code></a></td>
+<td>Cycles: Fix change of sign warning</td>
+</tr>
+<tr>
+<td>Mai Lavelle</td>
+<td><a href="https://developer.blender.org/rB013a5c2"><code>013a5c2</code></a></td>
+<td>Cycles: Remove odd definition from CMake file</td>
+</tr>
+<tr>
+<td>Alexander Gavrilov</td>
+<td><a href="https://developer.blender.org/rB1fe9d67"><code>1fe9d67</code></a></td>
+<td>Fix T49004 and motion blur of cloth, softbody, etc past the end frame.</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBfdc43f9"><code>fdc43f9</code></a></td>
+<td>Cycles: Use static assert to control structures alignment</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBa501668"><code>a501668</code></a></td>
+<td>Revert &#8220;Cycles Tests: Add test for correct 16 byte alignment of KernelData structs&#8221;</td>
+</tr>
 <tr>
 <td>Lukas Stockner</td>
 <td><a href="https://developer.blender.org/rB7c3a06c"><code>7c3a06c</code></a></td>
@@ -236,81 +311,6 @@
 <td>Lukas Stockner</td>
 <td><a href="https://developer.blender.org/rBef27d8e"><code>ef27d8e</code></a></td>
 <td>Cycles Standalone: Add option to set the tile size from the command line</td>
-</tr>
-<tr>
-<td>Lukas Stockner</td>
-<td><a href="https://developer.blender.org/rBbbbc079"><code>bbbc079</code></a></td>
-<td>Cycles: Correct maximum number of textures on pre-Kepler <span class="caps">CUDA</span> cards</td>
-</tr>
-<tr>
-<td>Antonioya</td>
-<td><a href="https://developer.blender.org/rBebdb549"><code>ebdb549</code></a></td>
-<td>GPencil: Avoid segment fault if new stroke function is called without colorname</td>
-</tr>
-<tr>
-<td>Antonioya</td>
-<td><a href="https://developer.blender.org/rB774beb7"><code>774beb7</code></a></td>
-<td>GPencil: Rename color name property to keep consistency in naming</td>
-</tr>
-<tr>
-<td>Bastien Montagne</td>
-<td><a href="https://developer.blender.org/rBc19d527"><code>c19d527</code></a></td>
-<td>Fix crash in id remapping of Graph editor.</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB0433ae3"><code>0433ae3</code></a></td>
-<td>Cycles: Use proper property getter</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB0271952"><code>0271952</code></a></td>
-<td>Attempt to fix previous commit for non-c++11 builds</td>
-</tr>
-<tr>
-<td>Lukas Tönne</td>
-<td><a href="https://developer.blender.org/rB3bbf8fb"><code>3bbf8fb</code></a></td>
-<td>Fix for isfinite breaking builds when WITH_CXX11 is enabled.</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBd5a0ae0"><code>d5a0ae0</code></a></td>
-<td>Fix T48916: Proxy Custom File is broken</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB1647d89"><code>1647d89</code></a></td>
-<td>Fix T49027: Sequence uses too much memory when rendering scene with lots of movie strips</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBf990518"><code>f990518</code></a></td>
-<td>CMake: Once again, don&#8217;t use find_package to get hardcoded libraries</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB62b6706"><code>62b6706</code></a></td>
-<td>CMake: Remove hardcoded DIR_ROOT for alembic and MinGW</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBf0bf33f"><code>f0bf33f</code></a></td>
-<td>CMake: Use proper way to define debug/release libraries for alembic</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBbccaa994"><code>bccaa994</code></a></td>
-<td>CMake: Do not force set root folder for Alembic</td>
-</tr>
-<tr>
-<td>Alexander Gavrilov</td>
-<td><a href="https://developer.blender.org/rBa7f6f90"><code>a7f6f90</code></a></td>
-<td>Cycles: avoid making NaNs in Vector Math node by normalizing zero vectors.</td>
-</tr>
-<tr>
-<td>Thomas Dinges</td>
-<td><a href="https://developer.blender.org/rBc2a7317"><code>c2a7317</code></a></td>
-<td><span class="caps">CUDA</span>: We don&#8217;t support Toolkits &lt; 7.5, update error message.</td>
 </tr>
 </tbody>
 </table>
