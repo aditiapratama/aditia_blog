@@ -4,29 +4,29 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Thu, 11 Aug 2016 05:13:10 +0700">Thu, 11 Aug 2016 05:13:10 +0700</time>
+    <time class="timeago" datetime="Sat, 13 Aug 2016 22:19:51 +0700">Sat, 13 Aug 2016 22:19:51 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
+Antonioya | [`35a6e54`](https://developer.blender.org/rB35a6e54) | GPencil: Cleanup code
+Lukas Tönne | [`c395d04`](https://developer.blender.org/rBc395d04) | Fix T49082: Intermediate update call when making links can change group socket layout.
+Julian Eisel | [`fcb78f2`](https://developer.blender.org/rBfcb78f2) | Add DNA_struct_find (useful for version patching)
+Julian Eisel | [`25872ca`](https://developer.blender.org/rB25872ca) | Fix error in GPencil V2 version patching
+Sergey Sharybin | [`04c7d9d`](https://developer.blender.org/rB04c7d9d) | Depsgraph: tag relations for update when aterial slots changes
+Sergey Sharybin | [`82268fa`](https://developer.blender.org/rB82268fa) | Depsgraph: Tag relations for update when making datablocks single user
+Brecht Van Lommel | [`bac1279`](https://developer.blender.org/rBbac1279) | Fix T49045: splash not working correctly on OS X, after recent bugfix.
+Brecht Van Lommel | [`f3bff6a`](https://developer.blender.org/rBf3bff6a) | Fix T49071: Cycles OSL build problem with oslc compilers that can't find their own stdosl.h.
+Thomas Dinges | [`9d236ac`](https://developer.blender.org/rB9d236ac) | Cycles: Enable half float support (4 channels and 1 channel) on CUDA.
+Thomas Dinges | [`5ac7ef8`](https://developer.blender.org/rB5ac7ef8) | Cycles: Change code order for Image Data Types.
+Mai Lavelle | [`3aed54d`](https://developer.blender.org/rB3aed54d) | Cycles: Fix change of sign warning
+Mai Lavelle | [`013a5c2`](https://developer.blender.org/rB013a5c2) | Cycles: Remove odd definition from CMake file
+Alexander Gavrilov | [`1fe9d67`](https://developer.blender.org/rB1fe9d67) | Fix T49004 and motion blur of cloth, softbody, etc past the end frame.
+Sergey Sharybin | [`fdc43f9`](https://developer.blender.org/rBfdc43f9) | Cycles: Use static assert to control structures alignment
+Sergey Sharybin | [`a501668`](https://developer.blender.org/rBa501668) | Revert "Cycles Tests: Add test for correct 16 byte alignment of KernelData structs"
 Lukas Stockner | [`7c3a06c`](https://developer.blender.org/rB7c3a06c) | Cycles Tests: Add test for correct 16 byte alignment of KernelData structs
 Mai Lavelle | [`4d1bf14`](https://developer.blender.org/rB4d1bf14) | Cycles Standalone: Fix building after microdisp changes
 Lukas Stockner | [`82e65ab`](https://developer.blender.org/rB82e65ab) | Cycles: Fix KernelIntegrator padding to 16-byte boundary
 Bastien Montagne | [`498b7bd7`](https://developer.blender.org/rB498b7bd7) | Updated install_deps.sh to OSD 3.0.5 (and switch from git repo to download archive of sources).
 Lukas Stockner | [`ef27d8e`](https://developer.blender.org/rBef27d8e) | Cycles Standalone: Add option to set the tile size from the command line
-Lukas Stockner | [`bbbc079`](https://developer.blender.org/rBbbbc079) | Cycles: Correct maximum number of textures on pre-Kepler CUDA cards
-Antonioya | [`ebdb549`](https://developer.blender.org/rBebdb549) | GPencil: Avoid segment fault if new stroke function is called without colorname
-Antonioya | [`774beb7`](https://developer.blender.org/rB774beb7) | GPencil: Rename color name property to keep consistency in naming
-Bastien Montagne | [`c19d527`](https://developer.blender.org/rBc19d527) | Fix crash in id remapping of Graph editor.
-Sergey Sharybin | [`0433ae3`](https://developer.blender.org/rB0433ae3) | Cycles: Use proper property getter
-Sergey Sharybin | [`0271952`](https://developer.blender.org/rB0271952) | Attempt to fix previous commit for non-c++11 builds
-Lukas Tönne | [`3bbf8fb`](https://developer.blender.org/rB3bbf8fb) | Fix for isfinite breaking builds when WITH_CXX11 is enabled.
-Sergey Sharybin | [`d5a0ae0`](https://developer.blender.org/rBd5a0ae0) | Fix T48916: Proxy Custom File is broken
-Sergey Sharybin | [`1647d89`](https://developer.blender.org/rB1647d89) | Fix T49027: Sequence uses too much memory when rendering scene with lots of movie strips
-Sergey Sharybin | [`f990518`](https://developer.blender.org/rBf990518) | CMake: Once again, don't use find_package to get hardcoded libraries
-Sergey Sharybin | [`62b6706`](https://developer.blender.org/rB62b6706) | CMake: Remove hardcoded DIR_ROOT for alembic and MinGW
-Sergey Sharybin | [`f0bf33f`](https://developer.blender.org/rBf0bf33f) | CMake: Use proper way to define debug/release libraries for alembic
-Sergey Sharybin | [`bccaa994`](https://developer.blender.org/rBbccaa994) | CMake: Do not force set root folder for Alembic
-Alexander Gavrilov | [`a7f6f90`](https://developer.blender.org/rBa7f6f90) | Cycles: avoid making NaNs in Vector Math node by normalizing zero vectors.
-Thomas Dinges | [`c2a7317`](https://developer.blender.org/rBc2a7317) | CUDA: We don't support Toolkits < 7.5, update error message.
