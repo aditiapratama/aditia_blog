@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - BRANCH : master Compiled : Sat, 13 Aug 2016 22:26:05 +0700 AUTHOR HASH MESSAGE Antonioya 35a6e54 GPencil: Cleanup code Lukas Tönne c395d04 Fix T49082: Intermediate update call when making links can change group socket layout. Julian Eisel fcb78f2 Add DNA_struct_find (useful ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 05:34:47 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel 40b3674 Code cleanup to use array.data() rather than &array[0]. Brecht Van Lommel c0161a1 Fix T48913: cycles viewport render stuck in loop due ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Sat, 13 Aug 2016 22:26:05 +0700 AUTHOR HASH MESSAGE Antonioya 35a6e54 GPencil: Cleanup code Lukas Tönne c395d04 Fix T49082: Intermediate update call when making links can change group socket layout. Julian Eisel fcb78f2 Add DNA_struct_find (useful ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 05:34:47 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel 40b3674 Code cleanup to use array.data() rather than &array[0]. Brecht Van Lommel c0161a1 Fix T48913: cycles viewport render stuck in loop due ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -199,7 +199,7 @@
   <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Sat, 13 Aug 2016 22:26:05 +0700">Sat, 13 Aug 2016 22:26:05 +0700</time>
+    <time class="timeago" datetime="Thu, 18 Aug 2016 05:34:47 +0700">Thu, 18 Aug 2016 05:34:47 +0700</time>
   </span>
 </h2>
 
@@ -213,104 +213,104 @@
 </thead>
 <tbody>
 <tr>
-<td>Antonioya</td>
-<td><a href="https://developer.blender.org/rB35a6e54"><code>35a6e54</code></a></td>
-<td>GPencil: Cleanup code</td>
-</tr>
-<tr>
-<td>Lukas Tönne</td>
-<td><a href="https://developer.blender.org/rBc395d04"><code>c395d04</code></a></td>
-<td>Fix T49082: Intermediate update call when making links can change group socket layout.</td>
-</tr>
-<tr>
-<td>Julian Eisel</td>
-<td><a href="https://developer.blender.org/rBfcb78f2"><code>fcb78f2</code></a></td>
-<td>Add DNA_struct_find (useful for version patching)</td>
-</tr>
-<tr>
-<td>Julian Eisel</td>
-<td><a href="https://developer.blender.org/rB25872ca"><code>25872ca</code></a></td>
-<td>Fix error in GPencil V2 version patching</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB04c7d9d"><code>04c7d9d</code></a></td>
-<td>Depsgraph: tag relations for update when aterial slots changes</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB82268fa"><code>82268fa</code></a></td>
-<td>Depsgraph: Tag relations for update when making datablocks single user</td>
+<td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rB40b3674"><code>40b3674</code></a></td>
+<td>Code cleanup to use array.data() rather than &amp;array[0].</td>
 </tr>
 <tr>
 <td>Brecht Van Lommel</td>
-<td><a href="https://developer.blender.org/rBbac1279"><code>bac1279</code></a></td>
-<td>Fix T49045: splash not working correctly on <span class="caps">OS</span> X, after recent bugfix.</td>
+<td><a href="https://developer.blender.org/rBc0161a1"><code>c0161a1</code></a></td>
+<td>Fix T48913: cycles viewport render stuck in loop due to non-unique dupli <span class="caps">ID</span>.</td>
 </tr>
 <tr>
-<td>Brecht Van Lommel</td>
-<td><a href="https://developer.blender.org/rBf3bff6a"><code>f3bff6a</code></a></td>
-<td>Fix T49071: Cycles <span class="caps">OSL</span> build problem with oslc compilers that can&#8217;t find their own stdosl.h.</td>
+<td>Kévin Dietrich</td>
+<td><a href="https://developer.blender.org/rB11e9c5e"><code>11e9c5e</code></a></td>
+<td>Fix T49104: normal problem in imported Alembic objects</td>
 </tr>
 <tr>
-<td>Thomas Dinges</td>
-<td><a href="https://developer.blender.org/rB9d236ac"><code>9d236ac</code></a></td>
-<td>Cycles: Enable half float support (4 channels and 1 channel) on <span class="caps">CUDA</span>.</td>
+<td>Kévin Dietrich</td>
+<td><a href="https://developer.blender.org/rB8e7bbe6"><code>8e7bbe6</code></a></td>
+<td>Alembic import: fix scene min/max time computation to take objects with transform animations into account.</td>
 </tr>
 <tr>
-<td>Thomas Dinges</td>
-<td><a href="https://developer.blender.org/rB5ac7ef8"><code>5ac7ef8</code></a></td>
-<td>Cycles: Change code order for Image Data Types.</td>
-</tr>
-<tr>
-<td>Mai Lavelle</td>
-<td><a href="https://developer.blender.org/rB3aed54d"><code>3aed54d</code></a></td>
-<td>Cycles: Fix change of sign warning</td>
-</tr>
-<tr>
-<td>Mai Lavelle</td>
-<td><a href="https://developer.blender.org/rB013a5c2"><code>013a5c2</code></a></td>
-<td>Cycles: Remove odd definition from CMake file</td>
-</tr>
-<tr>
-<td>Alexander Gavrilov</td>
-<td><a href="https://developer.blender.org/rB1fe9d67"><code>1fe9d67</code></a></td>
-<td>Fix T49004 and motion blur of cloth, softbody, etc past the end frame.</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBfdc43f9"><code>fdc43f9</code></a></td>
-<td>Cycles: Use static assert to control structures alignment</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBa501668"><code>a501668</code></a></td>
-<td>Revert &#8220;Cycles Tests: Add test for correct 16 byte alignment of KernelData structs&#8221;</td>
-</tr>
-<tr>
-<td>Lukas Stockner</td>
-<td><a href="https://developer.blender.org/rB7c3a06c"><code>7c3a06c</code></a></td>
-<td>Cycles Tests: Add test for correct 16 byte alignment of KernelData structs</td>
-</tr>
-<tr>
-<td>Mai Lavelle</td>
-<td><a href="https://developer.blender.org/rB4d1bf14"><code>4d1bf14</code></a></td>
-<td>Cycles Standalone: Fix building after microdisp changes</td>
-</tr>
-<tr>
-<td>Lukas Stockner</td>
-<td><a href="https://developer.blender.org/rB82e65ab"><code>82e65ab</code></a></td>
-<td>Cycles: Fix KernelIntegrator padding to 16-byte boundary</td>
+<td>Kévin Dietrich</td>
+<td><a href="https://developer.blender.org/rB294b075"><code>294b075</code></a></td>
+<td>Fix T49081: Alembic sampling times are not taking start frame into account.</td>
 </tr>
 <tr>
 <td>Bastien Montagne</td>
-<td><a href="https://developer.blender.org/rB498b7bd7"><code>498b7bd7</code></a></td>
-<td>Updated install_deps.sh to <span class="caps">OSD</span> 3.0.5 (and switch from git repo to download archive of sources).</td>
+<td><a href="https://developer.blender.org/rBc783e65"><code>c783e65</code></a></td>
+<td>Fix/add some tooltips to &#8216;Object Align&#8217; operator options.</td>
 </tr>
 <tr>
-<td>Lukas Stockner</td>
-<td><a href="https://developer.blender.org/rBef27d8e"><code>ef27d8e</code></a></td>
-<td>Cycles Standalone: Add option to set the tile size from the command line</td>
+<td>Howard Trickey</td>
+<td><a href="https://developer.blender.org/rBe3b5aa9"><code>e3b5aa9</code></a></td>
+<td>Fix Bevel crashes T49088 and T48858.</td>
+</tr>
+<tr>
+<td>Mai Lavelle</td>
+<td><a href="https://developer.blender.org/rB8cac980"><code>8cac980</code></a></td>
+<td>Cycles: Fix regression where smoke wouldn&#8217;t show in renders</td>
+</tr>
+<tr>
+<td>Antonioya</td>
+<td><a href="https://developer.blender.org/rBab775b6"><code>ab775b6</code></a></td>
+<td>Fix T49102: Angle option of new <span class="caps">GP</span> brush settings is too restricted in value</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB47e08ee"><code>47e08ee</code></a></td>
+<td>Fix T49086: <span class="caps">UV</span> Along Stroke can be set as vector input for environment texture</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB294eac2"><code>294eac2</code></a></td>
+<td>CMake: Move main platform checks to separate files</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB186ee09"><code>186ee09</code></a></td>
+<td>More <span class="caps">UI</span> messages fixes and cleanup.</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBacbef39"><code>acbef39</code></a></td>
+<td>2D stabilizer: Cover rotation tracks label with enabled flag</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB1fb8bbc"><code>1fb8bbc</code></a></td>
+<td>2D stabilizer: Use exact getter instead of regular one followed with frame check</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB1e60535"><code>1e60535</code></a></td>
+<td>2D stabilizer: Remove check for markers count in the track</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB069bc40"><code>069bc40</code></a></td>
+<td>2D stabilizer: Remove redundant rows from the interface</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB83d94ef"><code>83d94ef</code></a></td>
+<td>2D stabilizer: One more occurrence of len() in the drawing code</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB1c633de"><code>1c633de</code></a></td>
+<td>2D Stabilizer: Use more consistent <span class="caps">RNA</span> naming for properties</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBde28940"><code>de28940</code></a></td>
+<td>2D Stabilzier: Don&#8217;t use len() for checking whether something is enabled or not</td>
+</tr>
+<tr>
+<td>Antonioya</td>
+<td><a href="https://developer.blender.org/rBe392658"><code>e392658</code></a></td>
+<td>Fix T49100: Replace old tooltip for GPencil brush iterations</td>
 </tr>
 </tbody>
 </table>
