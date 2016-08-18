@@ -4,12 +4,15 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Thu, 18 Aug 2016 05:34:47 +0700">Thu, 18 Aug 2016 05:34:47 +0700</time>
+    <time class="timeago" datetime="Thu, 18 Aug 2016 08:36:53 +0700">Thu, 18 Aug 2016 08:36:53 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
+Brecht Van Lommel | [`f92a6b8`](https://developer.blender.org/rBf92a6b8) | Fix compiler warning after fix for T48913.
+Brecht Van Lommel | [`e8b5e66`](https://developer.blender.org/rBe8b5e66) | Code cleanup to use array.data() rather than &array[0]
+Mai Lavelle | [`7baf93c`](https://developer.blender.org/rB7baf93c) | Revert "Code cleanup to use array.data() rather than &array[0]."
 Brecht Van Lommel | [`40b3674`](https://developer.blender.org/rB40b3674) | Code cleanup to use array.data() rather than &array[0].
 Brecht Van Lommel | [`c0161a1`](https://developer.blender.org/rBc0161a1) | Fix T48913: cycles viewport render stuck in loop due to non-unique dupli ID.
 Kévin Dietrich | [`11e9c5e`](https://developer.blender.org/rB11e9c5e) | Fix T49104: normal problem in imported Alembic objects
@@ -27,6 +30,3 @@ Sergey Sharybin | [`1fb8bbc`](https://developer.blender.org/rB1fb8bbc) | 2D stab
 Sergey Sharybin | [`1e60535`](https://developer.blender.org/rB1e60535) | 2D stabilizer: Remove check for markers count in the track
 Sergey Sharybin | [`069bc40`](https://developer.blender.org/rB069bc40) | 2D stabilizer: Remove redundant rows from the interface
 Sergey Sharybin | [`83d94ef`](https://developer.blender.org/rB83d94ef) | 2D stabilizer: One more occurrence of len() in the drawing code
-Sergey Sharybin | [`1c633de`](https://developer.blender.org/rB1c633de) | 2D Stabilizer: Use more consistent RNA naming for properties
-Sergey Sharybin | [`de28940`](https://developer.blender.org/rBde28940) | 2D Stabilzier: Don't use len() for checking whether something is enabled or not
-Antonioya | [`e392658`](https://developer.blender.org/rBe392658) | Fix T49100: Replace old tooltip for GPencil brush iterations
