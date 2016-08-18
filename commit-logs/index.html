@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 05:34:47 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel 40b3674 Code cleanup to use array.data() rather than &array[0]. Brecht Van Lommel c0161a1 Fix T48913: cycles viewport render stuck in loop due ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 08:36:53 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel f92a6b8 Fix compiler warning after fix for T48913. Brecht Van Lommel e8b5e66 Code cleanup to use array.data() rather than &array[0] Mai Lavelle ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 05:34:47 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel 40b3674 Code cleanup to use array.data() rather than &array[0]. Brecht Van Lommel c0161a1 Fix T48913: cycles viewport render stuck in loop due ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 08:36:53 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel f92a6b8 Fix compiler warning after fix for T48913. Brecht Van Lommel e8b5e66 Code cleanup to use array.data() rather than &array[0] Mai Lavelle ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -199,7 +199,7 @@
   <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Thu, 18 Aug 2016 05:34:47 +0700">Thu, 18 Aug 2016 05:34:47 +0700</time>
+    <time class="timeago" datetime="Thu, 18 Aug 2016 08:36:53 +0700">Thu, 18 Aug 2016 08:36:53 +0700</time>
   </span>
 </h2>
 
@@ -212,6 +212,21 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rBf92a6b8"><code>f92a6b8</code></a></td>
+<td>Fix compiler warning after fix for T48913.</td>
+</tr>
+<tr>
+<td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rBe8b5e66"><code>e8b5e66</code></a></td>
+<td>Code cleanup to use array.data() rather than &amp;array[0]</td>
+</tr>
+<tr>
+<td>Mai Lavelle</td>
+<td><a href="https://developer.blender.org/rB7baf93c"><code>7baf93c</code></a></td>
+<td>Revert &#8220;Code cleanup to use array.data() rather than &amp;array[0].&#8221;</td>
+</tr>
 <tr>
 <td>Brecht Van Lommel</td>
 <td><a href="https://developer.blender.org/rB40b3674"><code>40b3674</code></a></td>
@@ -296,21 +311,6 @@
 <td>Sergey Sharybin</td>
 <td><a href="https://developer.blender.org/rB83d94ef"><code>83d94ef</code></a></td>
 <td>2D stabilizer: One more occurrence of len() in the drawing code</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB1c633de"><code>1c633de</code></a></td>
-<td>2D Stabilizer: Use more consistent <span class="caps">RNA</span> naming for properties</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBde28940"><code>de28940</code></a></td>
-<td>2D Stabilzier: Don&#8217;t use len() for checking whether something is enabled or not</td>
-</tr>
-<tr>
-<td>Antonioya</td>
-<td><a href="https://developer.blender.org/rBe392658"><code>e392658</code></a></td>
-<td>Fix T49100: Replace old tooltip for GPencil brush iterations</td>
 </tr>
 </tbody>
 </table>
