@@ -4,29 +4,29 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Thu, 18 Aug 2016 08:36:53 +0700">Thu, 18 Aug 2016 08:36:53 +0700</time>
+    <time class="timeago" datetime="Sat, 20 Aug 2016 05:12:23 +0700">Sat, 20 Aug 2016 05:12:23 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
+Brecht Van Lommel | [`cf53389`](https://developer.blender.org/rBcf53389) | Fix T49090: color picking draws wrong when using subsurf in material draw mode.
+Bastien Montagne | [`62e3849`](https://developer.blender.org/rB62e3849) | Fix T49105: Array modifier displayed in Edit mode crashes on selection, with End Cap enabled.
+Bastien Montagne | [`33fbf9b`](https://developer.blender.org/rB33fbf9b) | Fix broken keymap loading with disabled ndof - revert part of recent rBb10d0058d72da30
+Sergey Sharybin | [`793900d`](https://developer.blender.org/rB793900d) | 2D stabilization: Make interface more compact
+Kévin Dietrich | [`5f7611a`](https://developer.blender.org/rB5f7611a) | Alembic: fix crash accessing invalid objects.
+Kévin Dietrich | [`bf48750`](https://developer.blender.org/rBbf48750) | Fix T49111: Automatically add file path suffix for Alembic and Collada export.
+Julian Eisel | [`4d8ac1e`](https://developer.blender.org/rB4d8ac1e) | Cleanup: Remove redundant comment
+Sergey Sharybin | [`ca5271e`](https://developer.blender.org/rBca5271e) | Cycles: Fix wrong allocator used for spatial builder
+Bastien Montagne | [`f4e4009`](https://developer.blender.org/rBf4e4009) | Cleanup: some bad sizeof() usages.
+Bastien Montagne | [`2e6d427`](https://developer.blender.org/rB2e6d427) | Cleanup/security fix: do not use strcpy (at least in new code).
+Bastien Montagne | [`7b4ba65`](https://developer.blender.org/rB7b4ba65) | Cleanup for previous commit (nasty IDE replacing tads with spaces, tsst)
+Bastien Montagne | [`b4d36c7`](https://developer.blender.org/rBb4d36c7) | Two fixes for optional ndof & fix bplayer for that...
+Bastien Montagne | [`7b78532`](https://developer.blender.org/rB7b78532) | Freestyle: fix wrong arg order, and cleanup confusing loop (both reported by coverity).
+Bastien Montagne | [`26f4f7e`](https://developer.blender.org/rB26f4f7e) | Final UI messages fixes (for this session...).
+Thomas Beck | [`8a72ec8`](https://developer.blender.org/rB8a72ec8) | Fix bplayer (c) after NDOF changes from merwin
+Sergey Sharybin | [`12c3002`](https://developer.blender.org/rB12c3002) | Cleanup: ifdef function which is only used from ifdef-ed code
+Mike Erwin | [`b10d005`](https://developer.blender.org/rBb10d005) | NDOF: compile 3D mouse code only if WITH_INPUT_NDOF
+Mike Erwin | [`a195dd1`](https://developer.blender.org/rBa195dd1) | NDOF: suppress buttons debug log
 Brecht Van Lommel | [`f92a6b8`](https://developer.blender.org/rBf92a6b8) | Fix compiler warning after fix for T48913.
 Brecht Van Lommel | [`e8b5e66`](https://developer.blender.org/rBe8b5e66) | Code cleanup to use array.data() rather than &array[0]
-Mai Lavelle | [`7baf93c`](https://developer.blender.org/rB7baf93c) | Revert "Code cleanup to use array.data() rather than &array[0]."
-Brecht Van Lommel | [`40b3674`](https://developer.blender.org/rB40b3674) | Code cleanup to use array.data() rather than &array[0].
-Brecht Van Lommel | [`c0161a1`](https://developer.blender.org/rBc0161a1) | Fix T48913: cycles viewport render stuck in loop due to non-unique dupli ID.
-Kévin Dietrich | [`11e9c5e`](https://developer.blender.org/rB11e9c5e) | Fix T49104: normal problem in imported Alembic objects
-Kévin Dietrich | [`8e7bbe6`](https://developer.blender.org/rB8e7bbe6) | Alembic import: fix scene min/max time computation to take objects with transform animations into account.
-Kévin Dietrich | [`294b075`](https://developer.blender.org/rB294b075) | Fix T49081: Alembic sampling times are not taking start frame into account.
-Bastien Montagne | [`c783e65`](https://developer.blender.org/rBc783e65) | Fix/add some tooltips to 'Object Align' operator options.
-Howard Trickey | [`e3b5aa9`](https://developer.blender.org/rBe3b5aa9) | Fix Bevel crashes T49088 and T48858.
-Mai Lavelle | [`8cac980`](https://developer.blender.org/rB8cac980) | Cycles: Fix regression where smoke wouldn't show in renders
-Antonioya | [`ab775b6`](https://developer.blender.org/rBab775b6) | Fix T49102: Angle option of new GP brush settings is too restricted in value
-Sergey Sharybin | [`47e08ee`](https://developer.blender.org/rB47e08ee) | Fix T49086: UV Along Stroke can be set as vector input for environment texture
-Sergey Sharybin | [`294eac2`](https://developer.blender.org/rB294eac2) | CMake: Move main platform checks to separate files
-Bastien Montagne | [`186ee09`](https://developer.blender.org/rB186ee09) | More UI messages fixes and cleanup.
-Sergey Sharybin | [`acbef39`](https://developer.blender.org/rBacbef39) | 2D stabilizer: Cover rotation tracks label with enabled flag
-Sergey Sharybin | [`1fb8bbc`](https://developer.blender.org/rB1fb8bbc) | 2D stabilizer: Use exact getter instead of regular one followed with frame check
-Sergey Sharybin | [`1e60535`](https://developer.blender.org/rB1e60535) | 2D stabilizer: Remove check for markers count in the track
-Sergey Sharybin | [`069bc40`](https://developer.blender.org/rB069bc40) | 2D stabilizer: Remove redundant rows from the interface
-Sergey Sharybin | [`83d94ef`](https://developer.blender.org/rB83d94ef) | 2D stabilizer: One more occurrence of len() in the drawing code
