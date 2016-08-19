@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Commit Logs | Aditia A. Pratama</title>
-	<meta name="description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 08:36:53 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel f92a6b8 Fix compiler warning after fix for T48913. Brecht Van Lommel e8b5e66 Code cleanup to use array.data() rather than &array[0] Mai Lavelle ...">
+	<meta name="description" content="BLENDER - BRANCH : master Compiled : Sat, 20 Aug 2016 05:12:23 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel cf53389 Fix T49090: color picking draws wrong when using subsurf in material draw mode. Bastien Montagne 62e3849 Fix T49105: Array modifier displayed in Edit ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="aditia.pawitra.id">
 	<meta name="twitter:site" content="@aditia_ap">
 	<meta property="og:title" content="Commit Logs">
-	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Thu, 18 Aug 2016 08:36:53 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel f92a6b8 Fix compiler warning after fix for T48913. Brecht Van Lommel e8b5e66 Code cleanup to use array.data() rather than &array[0] Mai Lavelle ...">
+	<meta property="og:description" content="BLENDER - BRANCH : master Compiled : Sat, 20 Aug 2016 05:12:23 +0700 AUTHOR HASH MESSAGE Brecht Van Lommel cf53389 Fix T49090: color picking draws wrong when using subsurf in material draw mode. Bastien Montagne 62e3849 Fix T49105: Array modifier displayed in Edit ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.aditia.pawitra.id/commit-logs/">
@@ -199,7 +199,7 @@
   <i class="bf-blender"></i> <span class="caps">BLENDER</span> - <span class="caps">BRANCH</span> :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Thu, 18 Aug 2016 08:36:53 +0700">Thu, 18 Aug 2016 08:36:53 +0700</time>
+    <time class="timeago" datetime="Sat, 20 Aug 2016 05:12:23 +0700">Sat, 20 Aug 2016 05:12:23 +0700</time>
   </span>
 </h2>
 
@@ -214,6 +214,96 @@
 <tbody>
 <tr>
 <td>Brecht Van Lommel</td>
+<td><a href="https://developer.blender.org/rBcf53389"><code>cf53389</code></a></td>
+<td>Fix T49090: color picking draws wrong when using subsurf in material draw mode.</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB62e3849"><code>62e3849</code></a></td>
+<td>Fix T49105: Array modifier displayed in Edit mode crashes on selection, with End Cap enabled.</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB33fbf9b"><code>33fbf9b</code></a></td>
+<td>Fix broken keymap loading with disabled ndof - revert part of recent rBb10d0058d72da30</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB793900d"><code>793900d</code></a></td>
+<td>2D stabilization: Make interface more compact</td>
+</tr>
+<tr>
+<td>Kévin Dietrich</td>
+<td><a href="https://developer.blender.org/rB5f7611a"><code>5f7611a</code></a></td>
+<td>Alembic: fix crash accessing invalid objects.</td>
+</tr>
+<tr>
+<td>Kévin Dietrich</td>
+<td><a href="https://developer.blender.org/rBbf48750"><code>bf48750</code></a></td>
+<td>Fix T49111: Automatically add file path suffix for Alembic and Collada export.</td>
+</tr>
+<tr>
+<td>Julian Eisel</td>
+<td><a href="https://developer.blender.org/rB4d8ac1e"><code>4d8ac1e</code></a></td>
+<td>Cleanup: Remove redundant comment</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rBca5271e"><code>ca5271e</code></a></td>
+<td>Cycles: Fix wrong allocator used for spatial builder</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rBf4e4009"><code>f4e4009</code></a></td>
+<td>Cleanup: some bad sizeof() usages.</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB2e6d427"><code>2e6d427</code></a></td>
+<td>Cleanup/security fix: do not use strcpy (at least in new code).</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB7b4ba65"><code>7b4ba65</code></a></td>
+<td>Cleanup for previous commit (nasty <span class="caps">IDE</span> replacing tads with spaces, tsst)</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rBb4d36c7"><code>b4d36c7</code></a></td>
+<td>Two fixes for optional ndof <span class="amp">&amp;</span> fix bplayer for that&#8230;</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB7b78532"><code>7b78532</code></a></td>
+<td>Freestyle: fix wrong arg order, and cleanup confusing loop (both reported by coverity).</td>
+</tr>
+<tr>
+<td>Bastien Montagne</td>
+<td><a href="https://developer.blender.org/rB26f4f7e"><code>26f4f7e</code></a></td>
+<td>Final <span class="caps">UI</span> messages fixes (for this session&#8230;).</td>
+</tr>
+<tr>
+<td>Thomas Beck</td>
+<td><a href="https://developer.blender.org/rB8a72ec8"><code>8a72ec8</code></a></td>
+<td>Fix bplayer (c) after <span class="caps">NDOF</span> changes from merwin</td>
+</tr>
+<tr>
+<td>Sergey Sharybin</td>
+<td><a href="https://developer.blender.org/rB12c3002"><code>12c3002</code></a></td>
+<td>Cleanup: ifdef function which is only used from ifdef-ed code</td>
+</tr>
+<tr>
+<td>Mike Erwin</td>
+<td><a href="https://developer.blender.org/rBb10d005"><code>b10d005</code></a></td>
+<td><span class="caps">NDOF</span>: compile 3D mouse code only if WITH_INPUT_NDOF</td>
+</tr>
+<tr>
+<td>Mike Erwin</td>
+<td><a href="https://developer.blender.org/rBa195dd1"><code>a195dd1</code></a></td>
+<td><span class="caps">NDOF</span>: suppress buttons debug log</td>
+</tr>
+<tr>
+<td>Brecht Van Lommel</td>
 <td><a href="https://developer.blender.org/rBf92a6b8"><code>f92a6b8</code></a></td>
 <td>Fix compiler warning after fix for T48913.</td>
 </tr>
@@ -221,96 +311,6 @@
 <td>Brecht Van Lommel</td>
 <td><a href="https://developer.blender.org/rBe8b5e66"><code>e8b5e66</code></a></td>
 <td>Code cleanup to use array.data() rather than &amp;array[0]</td>
-</tr>
-<tr>
-<td>Mai Lavelle</td>
-<td><a href="https://developer.blender.org/rB7baf93c"><code>7baf93c</code></a></td>
-<td>Revert &#8220;Code cleanup to use array.data() rather than &amp;array[0].&#8221;</td>
-</tr>
-<tr>
-<td>Brecht Van Lommel</td>
-<td><a href="https://developer.blender.org/rB40b3674"><code>40b3674</code></a></td>
-<td>Code cleanup to use array.data() rather than &amp;array[0].</td>
-</tr>
-<tr>
-<td>Brecht Van Lommel</td>
-<td><a href="https://developer.blender.org/rBc0161a1"><code>c0161a1</code></a></td>
-<td>Fix T48913: cycles viewport render stuck in loop due to non-unique dupli <span class="caps">ID</span>.</td>
-</tr>
-<tr>
-<td>Kévin Dietrich</td>
-<td><a href="https://developer.blender.org/rB11e9c5e"><code>11e9c5e</code></a></td>
-<td>Fix T49104: normal problem in imported Alembic objects</td>
-</tr>
-<tr>
-<td>Kévin Dietrich</td>
-<td><a href="https://developer.blender.org/rB8e7bbe6"><code>8e7bbe6</code></a></td>
-<td>Alembic import: fix scene min/max time computation to take objects with transform animations into account.</td>
-</tr>
-<tr>
-<td>Kévin Dietrich</td>
-<td><a href="https://developer.blender.org/rB294b075"><code>294b075</code></a></td>
-<td>Fix T49081: Alembic sampling times are not taking start frame into account.</td>
-</tr>
-<tr>
-<td>Bastien Montagne</td>
-<td><a href="https://developer.blender.org/rBc783e65"><code>c783e65</code></a></td>
-<td>Fix/add some tooltips to &#8216;Object Align&#8217; operator options.</td>
-</tr>
-<tr>
-<td>Howard Trickey</td>
-<td><a href="https://developer.blender.org/rBe3b5aa9"><code>e3b5aa9</code></a></td>
-<td>Fix Bevel crashes T49088 and T48858.</td>
-</tr>
-<tr>
-<td>Mai Lavelle</td>
-<td><a href="https://developer.blender.org/rB8cac980"><code>8cac980</code></a></td>
-<td>Cycles: Fix regression where smoke wouldn&#8217;t show in renders</td>
-</tr>
-<tr>
-<td>Antonioya</td>
-<td><a href="https://developer.blender.org/rBab775b6"><code>ab775b6</code></a></td>
-<td>Fix T49102: Angle option of new <span class="caps">GP</span> brush settings is too restricted in value</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB47e08ee"><code>47e08ee</code></a></td>
-<td>Fix T49086: <span class="caps">UV</span> Along Stroke can be set as vector input for environment texture</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB294eac2"><code>294eac2</code></a></td>
-<td>CMake: Move main platform checks to separate files</td>
-</tr>
-<tr>
-<td>Bastien Montagne</td>
-<td><a href="https://developer.blender.org/rB186ee09"><code>186ee09</code></a></td>
-<td>More <span class="caps">UI</span> messages fixes and cleanup.</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rBacbef39"><code>acbef39</code></a></td>
-<td>2D stabilizer: Cover rotation tracks label with enabled flag</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB1fb8bbc"><code>1fb8bbc</code></a></td>
-<td>2D stabilizer: Use exact getter instead of regular one followed with frame check</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB1e60535"><code>1e60535</code></a></td>
-<td>2D stabilizer: Remove check for markers count in the track</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB069bc40"><code>069bc40</code></a></td>
-<td>2D stabilizer: Remove redundant rows from the interface</td>
-</tr>
-<tr>
-<td>Sergey Sharybin</td>
-<td><a href="https://developer.blender.org/rB83d94ef"><code>83d94ef</code></a></td>
-<td>2D stabilizer: One more occurrence of len() in the drawing code</td>
 </tr>
 </tbody>
 </table>
