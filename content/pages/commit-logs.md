@@ -4,29 +4,29 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Sat, 20 Aug 2016 05:12:23 +0700">Sat, 20 Aug 2016 05:12:23 +0700</time>
+    <time class="timeago" datetime="Fri, 25 Nov 2016 11:05:27 +0700">Fri, 25 Nov 2016 11:05:27 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
-Brecht Van Lommel | [`cf53389`](https://developer.blender.org/rBcf53389) | Fix T49090: color picking draws wrong when using subsurf in material draw mode.
-Bastien Montagne | [`62e3849`](https://developer.blender.org/rB62e3849) | Fix T49105: Array modifier displayed in Edit mode crashes on selection, with End Cap enabled.
-Bastien Montagne | [`33fbf9b`](https://developer.blender.org/rB33fbf9b) | Fix broken keymap loading with disabled ndof - revert part of recent rBb10d0058d72da30
-Sergey Sharybin | [`793900d`](https://developer.blender.org/rB793900d) | 2D stabilization: Make interface more compact
-Kévin Dietrich | [`5f7611a`](https://developer.blender.org/rB5f7611a) | Alembic: fix crash accessing invalid objects.
-Kévin Dietrich | [`bf48750`](https://developer.blender.org/rBbf48750) | Fix T49111: Automatically add file path suffix for Alembic and Collada export.
-Julian Eisel | [`4d8ac1e`](https://developer.blender.org/rB4d8ac1e) | Cleanup: Remove redundant comment
-Sergey Sharybin | [`ca5271e`](https://developer.blender.org/rBca5271e) | Cycles: Fix wrong allocator used for spatial builder
-Bastien Montagne | [`f4e4009`](https://developer.blender.org/rBf4e4009) | Cleanup: some bad sizeof() usages.
-Bastien Montagne | [`2e6d427`](https://developer.blender.org/rB2e6d427) | Cleanup/security fix: do not use strcpy (at least in new code).
-Bastien Montagne | [`7b4ba65`](https://developer.blender.org/rB7b4ba65) | Cleanup for previous commit (nasty IDE replacing tads with spaces, tsst)
-Bastien Montagne | [`b4d36c7`](https://developer.blender.org/rBb4d36c7) | Two fixes for optional ndof & fix bplayer for that...
-Bastien Montagne | [`7b78532`](https://developer.blender.org/rB7b78532) | Freestyle: fix wrong arg order, and cleanup confusing loop (both reported by coverity).
-Bastien Montagne | [`26f4f7e`](https://developer.blender.org/rB26f4f7e) | Final UI messages fixes (for this session...).
-Thomas Beck | [`8a72ec8`](https://developer.blender.org/rB8a72ec8) | Fix bplayer (c) after NDOF changes from merwin
-Sergey Sharybin | [`12c3002`](https://developer.blender.org/rB12c3002) | Cleanup: ifdef function which is only used from ifdef-ed code
-Mike Erwin | [`b10d005`](https://developer.blender.org/rBb10d005) | NDOF: compile 3D mouse code only if WITH_INPUT_NDOF
-Mike Erwin | [`a195dd1`](https://developer.blender.org/rBa195dd1) | NDOF: suppress buttons debug log
-Brecht Van Lommel | [`f92a6b8`](https://developer.blender.org/rBf92a6b8) | Fix compiler warning after fix for T48913.
-Brecht Van Lommel | [`e8b5e66`](https://developer.blender.org/rBe8b5e66) | Code cleanup to use array.data() rather than &array[0]
+Campbell Barton | [`d30a023`](https://developer.blender.org/rBd30a023) | Fix Torus default UV's offset outside 0-1 bounds
+Campbell Barton | [`4f4e0ec`](https://developer.blender.org/rB4f4e0ec) | Remove eekadoodle workaround for add torus
+Sergey Sharybin | [`729affe`](https://developer.blender.org/rB729affe) | Cycles: Avoid divisions by zero in volume sampling code
+Martijn Berger | [`4d3d2d0`](https://developer.blender.org/rB4d3d2d0) | Remove unused vector icons from RNA
+Campbell Barton | [`403f00e`](https://developer.blender.org/rB403f00e) | Fix prefs UI when built w/o Cycles
+Sergey Sharybin | [`def365e`](https://developer.blender.org/rBdef365e) | Fix T50100: Cycles SeparateRGBNode Red socket defined wrong
+Sergey Sharybin | [`f2b57c3`](https://developer.blender.org/rBf2b57c3) | Depsgraph: Fix matrix_world driver source
+Sergey Sharybin | [`a537e7b`](https://developer.blender.org/rBa537e7b) | Cycles: Fix strict compilation warnings
+Brecht Van Lommel | [`411836d`](https://developer.blender.org/rB411836d) | Fix Cycles device backwards compatibility error if device type is unavailable.
+Brecht Van Lommel | [`57141ea`](https://developer.blender.org/rB57141ea) | Fix spelling in Cycles distance culling description.
+Luca Rood | [`99c5c8b`](https://developer.blender.org/rB99c5c8b) | Fix T49718: Wrong "Make Duplicates Real" behavior with "Keep Hierarchy"
+Sergey Sharybin | [`9aa8d1b`](https://developer.blender.org/rB9aa8d1b) | Cycles: Fix strict compilation warnings
+Bastien Montagne | [`67b1979`](https://developer.blender.org/rB67b1979) | Install_deps: fix warning message not showing up in case build fails.
+Sergey Sharybin | [`751573c`](https://developer.blender.org/rB751573c) | Fix T50034: Blender changes processor affinity unauthorized
+Sergey Sharybin | [`cb694d6`](https://developer.blender.org/rBcb694d6) | GLog: Workaround compilation error on Hurd
+Sergey Sharybin | [`4818b3c`](https://developer.blender.org/rB4818b3c) | Cycles: Fix re-definition of some functions on x32 arch
+Bastien Montagne | [`1be717d`](https://developer.blender.org/rB1be717d) | Fix (unreported) crash when drawing armatures' poses in some cases.
+Sergey Sharybin | [`edc10f5`](https://developer.blender.org/rBedc10f5) | Cycles: Another attempt to fix compilation on 32bit Linux
+Sergey Sharybin | [`af444e9`](https://developer.blender.org/rBaf444e9) | Cycles: Attempt to fix 32bit buildbot builds after recent commit
+Sergey Sharybin | [`272412f`](https://developer.blender.org/rB272412f) | Cycles: Implement texture size limit simplify option
