@@ -3,18 +3,22 @@
 <head>
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
-	<title>Aditia A. Pratama</title>
-	<meta name="description" content="Random Thoughts and Technical Notes from Aditia A. Pratama, a Technical Director, CG instructor and  developer from Bandung, Indonesia.">
+	<title>Convert Image Sequences to Video using FFMPEG | Aditia A. Pratama</title>
+	<meta name="description" content="Today I’m facing the same issue again and again, it was converting image sequences to video file. If you need to this manually then here’s the step : Open blender, and set to sequence editor layout import your image sequences set ...">
 	<meta name="author" content="Aditia A. Pratama">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!-- Open Graph -->
-	<meta property="og:title" content="Aditia A. Pratama">
-	<meta property="og:description" content="Random Thoughts and Technical Notes from Aditia A. Pratama, a Technical Director, CG instructor and  developer from Bandung, Indonesia.">
+	<!-- Twitter Cards and Open Graph -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="@aditia_ap">
+	<meta name="twitter:domain" content="aditia.pawitra.id">
+	<meta name="twitter:site" content="@aditia_ap">
+	<meta property="og:title" content="Convert Image Sequences to Video using FFMPEG">
+	<meta property="og:description" content="Today I’m facing the same issue again and again, it was converting image sequences to video file. If you need to this manually then here’s the step : Open blender, and set to sequence editor layout import your image sequences set ...">
 	<meta property="og:image" content="http://www.aditia.pawitra.id/images/icons/avatar.png">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.aditia.pawitra.id">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://www.aditia.pawitra.id/2016/08/convert-image-sequences-to-video-using-ffmpeg/">
 
 	<!-- Stylesheets and Web Fonts -->
 
@@ -189,37 +193,38 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<article>
-		<h1 class="title"><a href="2016/08/convert-image-sequences-to-video-using-ffmpeg/" title="Convert Image Sequences to Video using FFMPEG">Convert Image Sequences to Video using <span class="caps">FFMPEG</span></a></h1>
-		<time class="date" datetime="2016-08-21 16:07:55+07:00">August 21, 2016</time>
-		<div class="content summary">
-			<p>Today I’m facing the same issue again and again, it was converting image sequences to video file. If you need to this manually then here’s the step : Open blender, and set to sequence editor layout import your image sequences set ...</p>
-		</div>
-<br>		<h1 class="title"><a href="2016/08/the-molten-cake-experiment/" title="The Molten Cake Experiment">The Molten Cake&nbsp;Experiment</a></h1>
-		<time class="date" datetime="2016-08-14 22:48:07+07:00">August 14, 2016</time>
-		<div class="content summary">
-			<p>It was so great today that I make my first molten cake. Basically this was a chocolate cake with melt chocolate inside. Well because this was my first baking experience, I think there could be more way to improve this (like presentation ...</p>
-		</div>
-<br>		<h1 class="title"><a href="2016/07/how-to-install-krita-in-fedora/" title="How to Install Krita in Fedora">How to Install Krita in&nbsp;Fedora</a></h1>
-		<time class="date" datetime="2016-07-14 15:52:24+07:00">July 14, 2016</time>
-		<div class="content summary">
-			<p>In this quick tips, I want to show you how to install Krita in Fedora (and other distro as well) in a very easy steps. As you know the latest Krita now using appimage for universal linux distribution. First we need to ...</p>
-		</div>
-<br>		<h1 class="title"><a href="2016/06/blogging-with-pelican-and-travis-ci/" title="Blogging with Pelican and Travis CI">Blogging with Pelican and Travis <span class="caps">CI</span></a></h1>
-		<time class="date" datetime="2016-06-19 17:18:00+07:00">June 19, 2016</time>
-		<div class="content summary">
-			<p>This blog is build using static site generator pelican and Travis Ci for automatic deploy. I’ll update this post for more how-to. Stay tune</p>
-		</div>
-	<div id="view-archives">
-		<!-- <a href="/archive/">Older Posts &raquo;</a> -->
-		<a href="/archive/">
-			<span id="more">
+	<h1 class="title"><a href="/2016/08/convert-image-sequences-to-video-using-ffmpeg/" title="Permalink to Convert Image Sequences to Video using FFMPEG">Convert Image Sequences to Video using <span class="caps">FFMPEG</span></a></h1>
+	<time class="date" datetime="2016-08-21 16:07:55+07:00">
+		August 21, 2016
+	</time>
+	<div class="content">
+		<p>Today I&#8217;m facing the same issue again and again, it was converting image sequences to video file. If you need to this manually then here&#8217;s the step&nbsp;:</p>
+<ul>
+<li>Open blender, and set to sequence editor&nbsp;layout</li>
+<li>import your image&nbsp;sequences</li>
+<li>set the render&nbsp;properties</li>
+<li>render to video&nbsp;file</li>
+</ul>
+<p>That&#8217;s what need to be done for one batch (one shot) of image sequences. In animation or vfx rendering, we&#8217;re dealing with hundred to thousand image sequences per shots, yes per shots. It means there&#8217;ll be a lot of shots. And if you need to do that manually, maybe you need a month of work hour or even hire extra&nbsp;staff.</p>
+<p>Here I show you how you convert all of the image sequences in available shots to video file using simple shell script and ffmpeg. I&#8217;ll try doing this in python&nbsp;later.</p>
+<p>Let say you have several folder, like&nbsp;below</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>
+</pre></div>
+</td></tr></table>
+	</div>
+
+	<div id="related-articles">
+		<a href="/2016/08/the-molten-cake-experiment/" id="prev-neighbour">
+			<span id="article-prev">
 				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-					<i class="material-icons" role="presentation">arrow_forward</i>
+					<i class="material-icons" role="presentation">navigate_next</i>
 				</button>
 			</span>
-			<span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left" for="more">Older Post</span>
+			<span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--left" for="article-prev">The Molten Cake Experiment</span>
+			<!-- The Molten Cake Experiment &raquo; -->
 		</a>
 	</div>
+
 									<hr>
 								</article>
 
