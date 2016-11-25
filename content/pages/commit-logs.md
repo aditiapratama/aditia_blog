@@ -4,12 +4,14 @@ title: Commit Logs
   <i class="bf-blender"></i> BLENDER - BRANCH :
   <i style="text-transform:uppercase;color:#c7254e">master</i>
   <span style="font-size:16px;font-weight:200;float:right;"> Compiled :
-    <time class="timeago" datetime="Fri, 25 Nov 2016 11:05:27 +0700">Fri, 25 Nov 2016 11:05:27 +0700</time>
+    <time class="timeago" datetime="Fri, 25 Nov 2016 17:41:45 +0700">Fri, 25 Nov 2016 17:41:45 +0700</time>
   </span>
 </h2>
 
 AUTHOR | HASH | MESSAGE
 --- | --- | ---
+Campbell Barton | [`bcd0d85`](https://developer.blender.org/rBbcd0d85) | Math Lib: avoid temp array for rotate_m4
+Campbell Barton | [`e1e49fd`](https://developer.blender.org/rBe1e49fd) | Math Lib: rotate matrix cleanup
 Campbell Barton | [`d30a023`](https://developer.blender.org/rBd30a023) | Fix Torus default UV's offset outside 0-1 bounds
 Campbell Barton | [`4f4e0ec`](https://developer.blender.org/rB4f4e0ec) | Remove eekadoodle workaround for add torus
 Sergey Sharybin | [`729affe`](https://developer.blender.org/rB729affe) | Cycles: Avoid divisions by zero in volume sampling code
@@ -28,5 +30,3 @@ Sergey Sharybin | [`cb694d6`](https://developer.blender.org/rBcb694d6) | GLog: W
 Sergey Sharybin | [`4818b3c`](https://developer.blender.org/rB4818b3c) | Cycles: Fix re-definition of some functions on x32 arch
 Bastien Montagne | [`1be717d`](https://developer.blender.org/rB1be717d) | Fix (unreported) crash when drawing armatures' poses in some cases.
 Sergey Sharybin | [`edc10f5`](https://developer.blender.org/rBedc10f5) | Cycles: Another attempt to fix compilation on 32bit Linux
-Sergey Sharybin | [`af444e9`](https://developer.blender.org/rBaf444e9) | Cycles: Attempt to fix 32bit buildbot builds after recent commit
-Sergey Sharybin | [`272412f`](https://developer.blender.org/rB272412f) | Cycles: Implement texture size limit simplify option
