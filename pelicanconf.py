@@ -29,11 +29,18 @@ GOOGLE_FONTS = [
         ]
 
 SOCIAL_ICONS = [
-            ('mailto:aditia@pawitra.id', 'Email (aditia@pawitra.id)', 'fa-envelope'),
-            ('http://twitter.com/aditia_ap', 'Twitter', 'fa-twitter'),
-            ('http://github.com/aditiapratama', 'GitHub', 'fa-github'),
-            ('/atom.xml', 'Atom Feed', 'fa-rss'),
-
+            ('mailto:aditia@pawitra.id', 
+                'Email (aditia@pawitra.id)', 
+                'fa-envelope'),
+            ('http://twitter.com/aditia_ap', 
+                'Twitter', 
+                'fa-twitter'),
+            ('http://github.com/aditiapratama', 
+                'GitHub',
+                'fa-github'),
+            ('/atom.xml', 
+                'Atom Feed', 
+                'fa-rss'),
         ]
 
 THEME_COLOR = '#455A64'
@@ -61,7 +68,8 @@ YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 
 # Disable authors, categories, tags, and category pages
-DIRECT_TEMPLATES = ['index', 'archives']
+DIRECT_TEMPLATES = ['index', 
+                    'archives']
 CATEGORY_SAVE_AS = ''
 
 # Disable Atom feed generation
@@ -72,7 +80,15 @@ TRANSLATION_FEED_ATOM = None
 
 TYPOGRIFY = True
 PYGMENTS_STYLE = 'monokai'
-MARKDOWN = ['admonition','fenced_code','codehilite(linenums=True)','extra']
+MARKDOWN = {
+        'extension_configs':{
+            'markdown.extensions.admonition':{},
+            'markdown.extensions.fenced_code':{},
+            'markdown.extensions.codehilite': {'linenums': True},
+            'markdown.extensions.extra':{}
+            },
+        'output_format': 'html5',
+        }
 # MD_EXTENSIONS = [
 #     CodeHiliteExtension(css_class='highlight'),
 #     TocExtension(permalink=True),
@@ -89,14 +105,30 @@ PATH = 'content'
 templates = ['404.html']
 TEMPLATE_PAGES = {page: page for page in templates}
 
-STATIC_PATHS = ['images', 'uploads', 'extra']
-IGNORE_FILES = ['.DS_Store', 'main.css', 'pneumatic.scss', 'pygments.css', 'main.scss', '_octicons.scss', '_variables.scss', 'css', 'js-dev']
+STATIC_PATHS = ['images', 
+                'uploads', 
+                'extra']
+IGNORE_FILES = ['.DS_Store', 
+                'main.css', 
+                'pneumatic.scss', 
+                'pygments.css', 
+                'main.scss', 
+                '_octicons.scss', 
+                '_variables.scss', 
+                'css', 
+                'js-dev']
 
-extras = ['CNAME', 'favicon.ico', 'keybase.txt', 'robots.txt']
+extras = ['CNAME', 
+        'favicon.ico', 
+        'keybase.txt', 
+        'robots.txt']
 EXTRA_PATH_METADATA = {'extra/%s' % file: {'path': file} for file in extras}
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['assets','neighbors','render_math','pelican_youtube']
+PLUGINS = ['assets',
+            'neighbors',
+            'render_math',
+            'pelican_youtube']
 ASSET_SOURCE_PATHS = ['static']
 ASSET_CONFIG = [
             ('cache', False),
