@@ -72,7 +72,7 @@ TRANSLATION_FEED_ATOM = None
 
 TYPOGRIFY = True
 PYGMENTS_STYLE = 'monokai'
-MD_EXTENSIONS = ['admonition','fenced_code','codehilite(linenums=True)','extra']
+MARKDOWN = ['admonition','fenced_code','codehilite(linenums=True)','extra']
 # MD_EXTENSIONS = [
 #     CodeHiliteExtension(css_class='highlight'),
 #     TocExtension(permalink=True),
